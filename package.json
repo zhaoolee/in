@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "push": "node rsync.js && npm run build && npm run export && node rsync.js && git add . && git commit -m 'ok' && git push",
+    "push": "npm run build && npm run export && node rsync.js && git add . && git commit -m 'ok' && git push",
     "dev": "next dev",
     "build": "next build",
     "export": "next export -o docs"
