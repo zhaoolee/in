@@ -4,7 +4,7 @@ exports.id = 820;
 exports.ids = [820];
 exports.modules = {
 
-/***/ 318:
+/***/ 5318:
 /***/ (function(module) {
 
 function _interopRequireDefault(obj) {
@@ -23,14 +23,14 @@ module.exports = _interopRequireDefault;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(318);
+var _interopRequireDefault = __webpack_require__(5318);
 
 exports.__esModule = true;
 exports.default = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(297));
+var _react = _interopRequireDefault(__webpack_require__(9297));
 
-var _head = _interopRequireDefault(__webpack_require__(273));
+var _head = _interopRequireDefault(__webpack_require__(5273));
 
 const statusCodes = {
   400: 'Bad Request',
@@ -120,7 +120,7 @@ const styles = {
 
 /***/ }),
 
-/***/ 273:
+/***/ 5273:
 /***/ (function(module) {
 
 "use strict";
@@ -128,7 +128,7 @@ module.exports = require("next/dist/next-server/lib/head.js");;
 
 /***/ }),
 
-/***/ 297:
+/***/ 9297:
 /***/ (function(module) {
 
 "use strict";

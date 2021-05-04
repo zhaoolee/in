@@ -1,5 +1,14 @@
 {
-    "presets": [
-      "@babel/preset-react"
+  "presets": [
+    [
+      "@babel/preset-react",
+      {
+        "styled-jsx": {
+          "plugins": [
+            "styled-jsx-plugin-sass"
+          ]
+        }
+      }
     ]
+  ]
 }
