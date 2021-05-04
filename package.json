@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.prod.config.js",
-    "dev": "webpack serve --open --config webpack.dev.config.js",
-    "push": "node rsync.js && npm run build && node rsync.js && git add . && git commit -m 'ok' && git push"
+    "push": "node rsync.js && npm run build && npm run export && node rsync.js && git add . && git commit -m 'ok' && git push",
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export -o docs"
   },
   "repository": {
     "type": "git",
