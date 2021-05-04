@@ -2,7 +2,7 @@
 const path = require('path')
 
 module.exports = {
-  basePath: '/in',
+  // basePath: '/in',
   future: {
     webpack5: true,
   },
