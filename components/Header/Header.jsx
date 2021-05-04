@@ -10,11 +10,11 @@ function Header() {
             title: "首页",
         },
         {
-            href: "/About",
+            href: "/about",
             title: "关于"
         },
         {
-            href: "/Contact",
+            href: "/contact",
             title: "联系我们"
         }
     ];

@@ -12,9 +12,9 @@ module.exports = {
   ) {
     return {
       '/': {page: '/In'},
-      '/Index': { page: '/In' },
-      '/Contact': { page: '/Contact' },
-      '/About': { page: '/About' }
+      '/index': { page: '/In' },
+      '/contact': { page: '/Contact' },
+      '/about': { page: '/About' }
     }
   },
 }
