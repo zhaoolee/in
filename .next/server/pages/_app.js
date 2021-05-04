@@ -34,7 +34,10 @@ function MyApp({
   Component,
   pageProps
 }) {
-  return /*#__PURE__*/external_react_default().createElement((external_react_default()).Fragment, null, /*#__PURE__*/external_react_default().createElement((head_default()), null, /*#__PURE__*/external_react_default().createElement("title", null, "\u65B9\u5706\u7075\u611F\u5BFC\u822A")), /*#__PURE__*/external_react_default().createElement(Component, pageProps));
+  return /*#__PURE__*/external_react_default().createElement((external_react_default()).Fragment, null, /*#__PURE__*/external_react_default().createElement((head_default()), null, /*#__PURE__*/external_react_default().createElement("title", null, "\u65B9\u5706\u7075\u611F\u5BFC\u822A"), /*#__PURE__*/external_react_default().createElement("link", {
+    rel: "shortcut icon",
+    href: "/in/favicon.ico"
+  })), /*#__PURE__*/external_react_default().createElement(Component, pageProps));
 }
 
 /* harmony default export */ var _app = (MyApp);
