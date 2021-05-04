@@ -6,7 +6,7 @@ function In({ Component, pageProps }) {
     return (
         <div className="in">
             <Header/>
-            <div>Index首页内容</div>
+            <div>Index-首页内容</div>
         </div>
     )
 }

@@ -6,7 +6,7 @@ function Contact({ Component, pageProps }) {
     return(
     <div>
         <Header/>
-        <span>Contact联系我们内容</span>
+        <span>Contact-联系我们内容</span>
     </div>)
 }
 
