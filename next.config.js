@@ -13,8 +13,13 @@ module.exports = {
     return {
       '/': {page: '/In'},
       '/index': { page: '/In' },
+      '/index.html': { page: '/In' },
+
       '/contact': { page: '/Contact' },
-      '/about': { page: '/About' }
+      '/contact.html': { page: '/Contact' },
+      
+      '/about': { page: '/About' },
+      '/about.html': { page: '/About' }
     }
   },
 }
