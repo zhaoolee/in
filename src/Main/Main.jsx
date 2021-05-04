@@ -9,7 +9,6 @@ class Main extends React.Component{
     render(){
         return <div>方圆灵感导航</div>;
     }
-
 }
 
 export default Main;

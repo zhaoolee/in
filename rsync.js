@@ -2,17 +2,9 @@ const Rsync = require("rsync");
 
 const path = require("path");
 
-const chmodr = require('chmodr');
-
-const fs = require("fs");
-
-const fse = require("fs-extra");
-
-
-const target_path = "/usr/share/nginx/v2fy.com/in";
 
 // 将本目录同步服务器
-async function update_data() {
+async function update_data(target_path) {
   await new Promise((resolve, reject) => {
     // Build the command
     var rsync = new Rsync()
@@ -36,7 +28,7 @@ async function update_data() {
           console.log("=数据传输报错=>>", data.toString());
         }
       )
-      .source(path.join(__dirname, 'dist/' ))
+      .source(path.join(__dirname, 'docs/' ))
       .destination("root@v2fy.com:" + target_path);
 
     // Execute the command
@@ -52,8 +44,10 @@ async function update_data() {
 
 async function main() {
 
-  // 先同步数据到服务端
-  await update_data();
+  // 同步到v2方圆
+  await update_data("/usr/share/nginx/v2fy.com/in");
+  // 同步到方圆小站
+  await update_data("/usr/share/nginx/fangyuanxiaozhan.com/in");
 
 }
 

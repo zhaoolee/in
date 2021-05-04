@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/index.js',
     watch: true,
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         filename: 'bundle.js',
     },
 
@@ -25,7 +25,7 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, 'docs'),
         port: 8666,
         publicPath: '/'
     },
