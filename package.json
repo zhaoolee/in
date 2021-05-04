@@ -1,0 +1,44 @@
+{
+  "name": "in",
+  "version": "1.0.0",
+  "description": "方圆灵感导航 Fangyuan Inspiration Navigation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.config.js",
+    "dev": "webpack serve --open --config webpack.dev.config.js",
+    "push": "node rsync.js && npm run build && node rsync.js && git add . && git commit -m 'ok' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaoolee/in.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhaoolee/in/issues"
+  },
+  "homepage": "https://github.com/zhaoolee/in#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "chmodr": "^1.2.0",
+    "fs-extra": "^10.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "rsync": "^0.6.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}
