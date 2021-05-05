@@ -9,8 +9,6 @@ function In(props) {
         <div className="in">
             <Header />
             <div>Index-首页内容</div>
-
-
             {props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
                 return   (
                     <div key={website_info_list_value.website_info_name}>
