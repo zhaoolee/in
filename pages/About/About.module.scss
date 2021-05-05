@@ -3,3 +3,19 @@
     padding-top: 20px;
     color: #404040;
 }
+
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.about_title{
+    flex: 0 1 auto;
+    font-size: 50px;
+
+}
+
+.desc_container{
+    flex: 0 1 auto;
+    padding: 10px;
+}
