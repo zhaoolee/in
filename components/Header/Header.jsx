@@ -3,19 +3,24 @@ import ReactDOM from 'react-dom';
 import Link from 'next/link';
 import headerscss from  './Header.module.scss';
 
-function Header() {
+
+function Header(props) {
+    console.log("props==>>", props);
     let posts =  [
         {
             href: "/",
             title: "首页",
+            title_key:"index"
         },
         {
             href: "/about.html",
-            title: "关于"
+            title: "关于",
+            title_key: "about"
         },
         {
             href: "/contact.html",
-            title: "联系我们"
+            title: "联系我们",
+            title_key: "contact"
         }
     ];
 
@@ -23,11 +28,14 @@ function Header() {
     return (
         <div className={headerscss.header}>
             {posts.map((post) => (
-                <div className={headerscss.acon} key={post.href}>
-                    <Link href={post.href}>
-                        <a>{post.title}</a>
-                    </Link>
+                <div className={headerscss.a_container} key={post.href}>
+                    {props.title_key === post.title_key && <Link href={post.href}>
+                         <a className={headerscss.a_title_hover}>{post.title}</a>
+                    </Link>}
 
+                    {props.title_key !== post.title_key && <Link href={post.href}>
+                         <a className={headerscss.a_title}>{post.title}</a>
+                    </Link>}
                 </div>
             ))}
         </div>

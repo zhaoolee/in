@@ -127,25 +127,35 @@ var Header_module_default = /*#__PURE__*/__webpack_require__.n(Header_module);
 
 
 
-function Header() {
+function Header(props) {
+  console.log("props==>>", props);
   let posts = [{
     href: "/",
-    title: "首页"
+    title: "首页",
+    title_key: "index"
   }, {
     href: "/about.html",
-    title: "关于"
+    title: "关于",
+    title_key: "about"
   }, {
     href: "/contact.html",
-    title: "联系我们"
+    title: "联系我们",
+    title_key: "contact"
   }];
   return /*#__PURE__*/external_react_default().createElement("div", {
     className: (Header_module_default()).header
   }, posts.map(post => /*#__PURE__*/external_react_default().createElement("div", {
-    className: (Header_module_default()).acon,
+    className: (Header_module_default()).a_container,
     key: post.href
-  }, /*#__PURE__*/external_react_default().createElement(next_link.default, {
+  }, props.title_key === post.title_key && /*#__PURE__*/external_react_default().createElement(next_link.default, {
     href: post.href
-  }, /*#__PURE__*/external_react_default().createElement("a", null, post.title)))));
+  }, /*#__PURE__*/external_react_default().createElement("a", {
+    className: (Header_module_default()).a_title_hover
+  }, post.title)), props.title_key !== post.title_key && /*#__PURE__*/external_react_default().createElement(next_link.default, {
+    href: post.href
+  }, /*#__PURE__*/external_react_default().createElement("a", {
+    className: (Header_module_default()).a_title
+  }, post.title)))));
 }
 
 /* harmony default export */ var Header_Header = (Header);
@@ -2690,58 +2700,174 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+function WebsiteInfo(props) {
+  const set_website_info_tag = () => {
+    props.set_website_info_tag(props.website_info_list_value.website_info_tag);
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    onClick: set_website_info_tag
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      width: 30,
+      height: 30
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("td", null, props.select === true && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_4___default().website_info_hover)
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_4___default().website_info_text),
+    dangerouslySetInnerHTML: {
+      __html: props.website_info_list_value.website_info_name
+    }
+  })), props.select === false && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_4___default().website_info)
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_4___default().website_info_text),
+    dangerouslySetInnerHTML: {
+      __html: props.website_info_list_value.website_info_name
+    }
+  })))))));
+}
+
 function In(props) {
+  const [website_info_tag, set_website_info_tag] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("font_research_society");
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "in"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_index_js__WEBPACK_IMPORTED_MODULE_2__/* .default */ .Z, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Index-\u9996\u9875\u5185\u5BB9"), props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      key: website_info_list_value.website_info_name
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, website_info_list_value.website_info_name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_4___default().website_con)
-    }, website_info_list_value.website_info_list.map((website_info_value, website_info_index) => {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(next_link__WEBPACK_IMPORTED_MODULE_3__.default, {
-        key: website_info_value.website_name,
-        href: website_info_value.website_href
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_4___default().web_atom)
-      }, website_info_value.website_name)));
-    })));
-  }));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header_index_js__WEBPACK_IMPORTED_MODULE_2__/* .default */ .Z, {
+    title_key: "index"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_4___default().website_info_container)
+  }, props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
+    return website_info_tag === website_info_list_value.website_info_tag ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(WebsiteInfo, {
+      key: website_info_list_value.website_info_name,
+      set_website_info_tag: set_website_info_tag,
+      website_info_list_value: website_info_list_value,
+      select: true
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(WebsiteInfo, {
+      key: website_info_list_value.website_info_name,
+      set_website_info_tag: set_website_info_tag,
+      website_info_list_value: website_info_list_value,
+      select: false
+    });
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, props.website_info_tag_and_list_obj[website_info_tag].map(website_info_list_value => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(next_link__WEBPACK_IMPORTED_MODULE_3__.default, {
+      key: website_info_list_value.website_name,
+      href: website_info_list_value.website_href
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", null, website_info_list_value.website_name));
+  })));
 }
 
 In.getInitialProps = async ctx => {
-  return {
-    all_website_info_list: [{
-      website_info_name: "设计",
-      website_info_list: [{
-        website_name: "方圆STU",
-        website_href: "https://fangyuanstu.com",
-        website_description: "天是方的，地是圆的",
-        webiste_icon: "",
-        website_more: ""
-      }, {
-        website_name: "在线PhotoShop",
-        website_href: "https://photopea.com",
-        website_description: "在线PhotoSho",
-        webiste_icon: "",
-        website_more: ""
-      }, {
-        website_name: "在线压缩图片",
-        website_href: "https://www.iloveimg.com/zh-cn/compress-image",
-        website_description: "压缩 JPG, PNG 或 GIF时保持最佳文件质量和压缩程度。一次缩小多个图片文件的尺寸。",
-        webiste_icon: "",
-        website_more: ""
-      }]
+  const all_website_info_list = [{
+    website_info_name: "字体<br/>研究社",
+    website_info_tag: "font_research_society",
+    website_info_list: [{
+      website_name: "方圆STU",
+      website_href: "https://fangyuanstu.com",
+      website_description: "天是方的，地是圆的",
+      webiste_icon: "",
+      website_more: ""
     }, {
-      website_info_name: "编程开发",
-      website_info_list: [{
-        website_name: "在线拟态",
-        website_href: "https://neumorphism.io/",
-        website_description: "天是方的，地是圆的",
-        webiste_icon: "",
-        website_more: ""
-      }]
+      website_name: "在线PhotoShop",
+      website_href: "https://photopea.com",
+      website_description: "在线PhotoSho",
+      webiste_icon: "",
+      website_more: ""
+    }, {
+      website_name: "在线压缩图片",
+      website_href: "https://www.iloveimg.com/zh-cn/compress-image",
+      website_description: "压缩 JPG, PNG 或 GIF时保持最佳文件质量和压缩程度。一次缩小多个图片文件的尺寸。",
+      webiste_icon: "",
+      website_more: ""
     }]
+  }, {
+    website_info_name: "色彩<br/>实验室",
+    website_info_tag: "color_lab",
+    website_info_list: [{
+      website_name: "在线拟态",
+      website_href: "https://neumorphism.io/",
+      website_description: "天是方的，地是圆的",
+      webiste_icon: "",
+      website_more: ""
+    }]
+  }, {
+    website_info_name: "图片<br/>工厂",
+    website_info_tag: "picture_factory",
+    website_info_list: [{
+      website_name: "在线拟态",
+      website_href: "https://neumorphism.io/",
+      website_description: "天是方的，地是圆的",
+      webiste_icon: "",
+      website_more: ""
+    }]
+  }, {
+    website_info_name: "资源<br/>集市",
+    website_info_tag: "resource_bazaar",
+    website_info_list: [{
+      website_name: "在线拟态",
+      website_href: "https://neumorphism.io/",
+      website_description: "天是方的，地是圆的",
+      webiste_icon: "",
+      website_more: ""
+    }]
+  }, {
+    website_info_name: "在线<br/>神器",
+    website_info_tag: "online_tools_book",
+    website_info_list: [{
+      website_name: "在线拟态",
+      website_href: "https://neumorphism.io/",
+      website_description: "天是方的，地是圆的",
+      webiste_icon: "",
+      website_more: ""
+    }]
+  }, {
+    website_info_name: "方圆<br/>栏目",
+    website_info_tag: "fangyuan_column",
+    website_info_list: [{
+      website_name: "在线拟态",
+      website_href: "https://neumorphism.io/",
+      website_description: "天是方的，地是圆的",
+      webiste_icon: "",
+      website_more: ""
+    }]
+  }, {
+    website_info_name: "Github<br/>开源",
+    website_info_tag: "github_open_source",
+    website_info_list: [{
+      website_name: "在线拟态",
+      website_href: "https://neumorphism.io/",
+      website_description: "天是方的，地是圆的",
+      webiste_icon: "",
+      website_more: ""
+    }]
+  }, {
+    website_info_name: "行业<br/>雷达",
+    website_info_tag: "industry_radar",
+    website_info_list: [{
+      website_name: "在线拟态",
+      website_href: "https://neumorphism.io/",
+      website_description: "天是方的，地是圆的",
+      webiste_icon: "",
+      website_more: ""
+    }]
+  }, {
+    website_info_name: "数据<br/>查询",
+    website_info_tag: "data_query",
+    website_info_list: [{
+      website_name: "在线拟态",
+      website_href: "https://neumorphism.io/",
+      website_description: "天是方的，地是圆的",
+      webiste_icon: "",
+      website_more: ""
+    }]
+  }];
+  let website_info_tag_and_list_obj = {};
+  all_website_info_list.map(website_info_value => {
+    website_info_tag_and_list_obj[website_info_value["website_info_tag"]] = website_info_value["website_info_list"];
+  });
+  return {
+    all_website_info_list,
+    website_info_tag_and_list_obj
   };
 };
 
@@ -2755,7 +2881,9 @@ In.getInitialProps = async ctx => {
 // Exports
 module.exports = {
 	"header": "Header_header__OkoDL",
-	"acon": "Header_acon__1KnH4"
+	"a_container": "Header_a_container__2jVdS",
+	"a_title": "Header_a_title__3cJPL",
+	"a_title_hover": "Header_a_title_hover__2GYCb"
 };
 
 
@@ -2766,8 +2894,11 @@ module.exports = {
 
 // Exports
 module.exports = {
-	"web_atom": "In_web_atom__20G5P",
-	"website_con": "In_website_con__1p6u7"
+	"website_info": "In_website_info__1r1Cw",
+	"website_info_hover": "In_website_info_hover__1Tq-P",
+	"website_info_text": "In_website_info_text__GID5K",
+	"website_info_container": "In_website_info_container__1r91R",
+	"website_info_list_container": "In_website_info_list_container__aZ4Ox"
 };
 
 

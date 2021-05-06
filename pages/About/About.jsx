@@ -5,7 +5,7 @@ import about_module_scss from './About.module.scss';
 
 function About({ Component, pageProps }) {
     return (<div className="about">
-        <Header />
+        <Header title_key={"about"}/>
 
         <div className={about_module_scss.content}>
             <div className={about_module_scss.about_title}>About</div>

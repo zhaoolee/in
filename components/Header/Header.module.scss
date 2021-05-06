@@ -2,15 +2,27 @@
     display: flex;
     text-align: right;
     background-color: #fafbfb;
-    
 }
 
-.acon {
+.a_container {
     flex: 1 1 auto;
     color: #000000;
     font-size: 30px;
     font-weight: 500;
-    a {
-        text-decoration: none;
-    }
+    padding: 20px 10px;
+}
+
+.a_title{
+    text-decoration:none;
+    color:#333333;
+}
+
+.a_title_hover{
+    text-decoration:none;
+    color:#eb0013;
+}
+
+.a_title:hover{
+    text-decoration:none;
+    color:#eb0013;
 }

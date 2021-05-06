@@ -2,14 +2,50 @@
 
 }
 
-.web_atom{
+.website_info{
     width: 124px;
     height: 124px;
     border-radius: 46px;
     background: #ffffff;
     box-shadow:  14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
+    color: #000000;
 }
 
-.website_con{
+.website_info_hover{
+    width: 124px;
+    height: 124px;
+    border-radius: 46px;
+    background: #eb0013;
+    box-shadow:  14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
+    color: #ffffff;
+}
+
+.website_info:hover{
+    width: 124px;
+    height: 124px;
+    border-radius: 46px;
+    background: #eb0013;
+    box-shadow:  14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
+    color: #ffffff;
+}
+
+
+.website_info_text{
+    padding: 20px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 800;
+}
+
+
+.website_info_container{
     display: flex;
+    overflow: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.website_info_list_container{
+    font-size: 300px;
+    height: 200px;
 }
