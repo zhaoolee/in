@@ -8,7 +8,7 @@ module.exports = {
   },
   images: {
     loader: 'imgix',
-    path: 'https://v2fy.com/in/',
+    path: 'https://v2fy.com/',
   },
   exportPathMap: async function (
     defaultPathMap,

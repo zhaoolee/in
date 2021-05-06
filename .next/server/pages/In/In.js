@@ -273,7 +273,7 @@ const {
   loader: configLoader,
   path: configPath,
   domains: configDomains
-} = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"https://v2fy.com/in/","loader":"imgix"} || _imageConfig.imageConfigDefault; // sort smallest to largest
+} = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"https://v2fy.com/","loader":"imgix"} || _imageConfig.imageConfigDefault; // sort smallest to largest
 
 const allSizes = [...configDeviceSizes, ...configImageSizes];
 configDeviceSizes.sort((a, b) => a - b);
