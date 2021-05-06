@@ -1,28 +1,55 @@
 .header{
+    min-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
-    text-align: right;
+    justify-content:  space-between;
     background-color: #fafbfb;
 }
+.logo_container {
+    padding: 20px 0;
+}
 
-.a_container {
-    flex: 1 1 auto;
-    color: #000000;
-    font-size: 30px;
-    font-weight: 500;
+.link_container{
+
+    display: flex;
+    width: 600px;
+    justify-content: flex-end;
     padding: 20px 10px;
+    line-height: 48px;
+}
+.a_container {
+
+
+    color: #000000;
+    font-size: 36px;
+    font-weight: 500;
+    padding: 0 10px;
+    
 }
 
-.a_title{
+.fangyuan_icon {
+
+    padding: 6px 10px;
+}
+
+.a_title {
     text-decoration:none;
-    color:#333333;
+    color:#ffffff;
+    font-weight: 600;
+    -webkit-text-stroke: 2px #333333;
 }
 
-.a_title_hover{
+.a_title_hover {
     text-decoration:none;
     color:#eb0013;
+    font-weight: 600;
+    -webkit-text-stroke: 1px #eb0013;
 }
 
-.a_title:hover{
+.a_title:hover {
     text-decoration:none;
     color:#eb0013;
+    font-weight: 600;
+    -webkit-text-stroke: 1px #eb0013;
 }

@@ -63,7 +63,12 @@ function In(props) {
                     return (<Link key={website_info_list_value.website_name} href={website_info_list_value.website_href}>
                         <a className={in_module_scss.website_info_list_atom_container_a}>
                             <div className={in_module_scss.website_info_list_atom}>
+                                <div className={in_module_scss.website_info_list_atom_title}>
                                 {website_info_list_value.website_name}
+                                </div>
+                                <div className={in_module_scss.website_info_list_atom_description}>
+                                {website_info_list_value.website_description}
+                                </div>
                             </div>
                         </a>
                     </Link>)

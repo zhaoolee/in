@@ -9,6 +9,7 @@
     background: #ffffff;
     box-shadow:  14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
     color: #000000;
+    
 }
 
 .website_info_hover{
@@ -28,6 +29,7 @@
     box-shadow:  14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
     color: #ffffff;
     cursor:pointer;
+    
 }
 
 .website_info_text{
@@ -40,6 +42,7 @@
 
 .website_info_container{
     display: flex;
+    justify-content: center;
     overflow: auto;
     width: 100%;
     text-align: center;
@@ -51,24 +54,77 @@
     height: 200px;
 }
 
+
+
 .website_info_list_atom_container {
 
     display: flex;
-    justify-content: space-between;
-
-}
-
-.website_info_list_atom_container_a{
-    text-decoration:none;
+    justify-content: center;
 
 }
 
 .website_info_list_atom{
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
     border-radius: 46px;
     background: #ffffff;
     box-shadow:  14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
     color: #000000;
+    margin: 30px;
+    
+}
+
+.website_info_list_atom_container_a{
+    text-decoration: none;
+}
+
+.website_info_list_atom_container_a:hover {
+    text-decoration: none;
+    .website_info_list_atom_title{
+        color: #eb0013;
+        font-size: 22px;
+        border: 2px solid #eb0013;
+        padding: 10px;
+        border-radius: 40px;
+        display: inline-block;
+        margin: 30px 30px 0px 30px;
+        font-weight: 800;
+    }
 
 }
+
+
+.website_info_list_atom_title{
+    color: #000000;
+    font-size: 22px;
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 30px 30px 0px 30px;
+    font-weight: 800;
+}
+
+.website_info_list_atom_title:hover{
+    color: #eb0013;
+    font-size: 22px;
+    border: 2px solid #eb0013;
+    padding: 10px;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 30px 30px 0px 30px;
+    font-weight: 800;
+
+}
+
+.website_info_list_atom_description{
+    color: #000000;
+    font-size: 18px;
+    padding: 10px 0;
+    display: inline-block;
+    margin: 0px 30px;
+
+
+
+}
+

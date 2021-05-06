@@ -6,6 +6,10 @@ module.exports = {
   future: {
     webpack5: true,
   },
+  images: {
+    loader: 'imgix',
+    path: 'https://v2fy.com/in/',
+  },
   exportPathMap: async function (
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
