@@ -7,28 +7,28 @@ import Link from 'next/link';
 
 function WebsiteInfo(props) {
 
-    const set_website_info_tag = ()=>{
+    const set_website_info_tag = () => {
         props.set_website_info_tag(props.website_info_list_value.website_info_tag)
     }
 
     return (<div onClick={set_website_info_tag}>
         <table>
             <tbody>
-            <tr>
-                <td>
-                    <div style={{ width: 30, height: 30 }}></div>
-                </td>
-                <td>
-                    {props.select === true && <div className={in_module_scss.website_info_hover}>
-                         <div className={in_module_scss.website_info_text} dangerouslySetInnerHTML={{ __html: props.website_info_list_value.website_info_name }}></div>
-                    </div>}
+                <tr>
+                    <td>
+                        <div style={{ width: 30, height: 30 }}></div>
+                    </td>
+                    <td>
+                        {props.select === true && <div className={in_module_scss.website_info_hover}>
+                            <div className={in_module_scss.website_info_text} dangerouslySetInnerHTML={{ __html: props.website_info_list_value.website_info_name }}></div>
+                        </div>}
 
-                    {props.select === false && <div className={in_module_scss.website_info}>
-                         <div className={in_module_scss.website_info_text} dangerouslySetInnerHTML={{ __html: props.website_info_list_value.website_info_name }}></div>
-                    </div>}
-                
-                </td>
-            </tr>
+                        {props.select === false && <div className={in_module_scss.website_info}>
+                            <div className={in_module_scss.website_info_text} dangerouslySetInnerHTML={{ __html: props.website_info_list_value.website_info_name }}></div>
+                        </div>}
+
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>)
@@ -38,11 +38,9 @@ function In(props) {
 
 
     const [website_info_tag, set_website_info_tag] = useState("font_research_society");
-
-
     return (
         <div className="in">
-            <Header title_key={"index"}/>
+            <Header title_key={"index"} />
             <div className={in_module_scss.website_info_container}>
                 {props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
                     return (
@@ -52,28 +50,26 @@ function In(props) {
                             website_info_list_value={website_info_list_value}
                             select={true}
                         /> : <WebsiteInfo
-                        key={website_info_list_value.website_info_name}
-                        set_website_info_tag={set_website_info_tag}
-                        website_info_list_value={website_info_list_value}
-                        select={false}
+                            key={website_info_list_value.website_info_name}
+                            set_website_info_tag={set_website_info_tag}
+                            website_info_list_value={website_info_list_value}
+                            select={false}
                         />)
                 })}
             </div>
 
-            {/* <div className={in_module_scss.website_info_list_container}>{website_info_tag}</div> */}
-
-
-            <div>
-                {props.website_info_tag_and_list_obj[website_info_tag].map((website_info_list_value)=>{
+            <div className={in_module_scss.website_info_list_atom_container}>
+                {props.website_info_tag_and_list_obj[website_info_tag].map((website_info_list_value) => {
                     return (<Link key={website_info_list_value.website_name} href={website_info_list_value.website_href}>
-                        <a>
-                    {website_info_list_value.website_name}
-                    </a>
+                        <a className={in_module_scss.website_info_list_atom_container_a}>
+                            <div className={in_module_scss.website_info_list_atom}>
+                                {website_info_list_value.website_name}
+                            </div>
+                        </a>
                     </Link>)
                 })}
-
             </div>
-            
+
 
 
         </div>
@@ -218,7 +214,7 @@ In.getInitialProps = async (ctx) => {
 
     let website_info_tag_and_list_obj = {};
 
-    all_website_info_list.map((website_info_value)=>{
+    all_website_info_list.map((website_info_value) => {
         website_info_tag_and_list_obj[website_info_value["website_info_tag"]] = website_info_value["website_info_list"]
     })
 

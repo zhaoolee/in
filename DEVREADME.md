@@ -10,4 +10,4 @@ npm i
 nvm run dev
 ```
 
-浏览器访问 http://localhost:8666/
+浏览器访问 http://localhost:3000/
