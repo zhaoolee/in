@@ -6,7 +6,7 @@ function Contact({ Component, pageProps }) {
     return(
     <div>
         <Header title_key={"contact"}/>
-        <span>Contact-联系我们内容</span>
+        <span>Contact </span>
     </div>)
 }
 

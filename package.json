@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "push": "npm run build  && node rsync.js && git add . && git commit -m 'ok' && git push",
-    "dev": "nodemon --watch ./pages/ --watch ./server/ --watch ./components/ server/index.js",
+    "dev": "nodemon",
     "build": "next build && next export -o docs && touch docs/.nojekyll"
   },
   "repository": {

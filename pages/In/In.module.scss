@@ -20,13 +20,14 @@
     color: #ffffff;
 }
 
-.website_info:hover{
+.website_info:hover {
     width: 124px;
     height: 124px;
     border-radius: 46px;
     background: #eb0013;
     box-shadow:  14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
     color: #ffffff;
+    cursor:pointer;
 }
 
 .website_info_text{

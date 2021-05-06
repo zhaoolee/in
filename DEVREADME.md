@@ -7,7 +7,7 @@ nvm install v14.16.0
 nvm use v14.16.0
 cd in
 npm i
-nvm run dev
+npm run dev
 ```
 
 浏览器访问 http://localhost:3000/
