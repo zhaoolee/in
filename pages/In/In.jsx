@@ -35,8 +35,12 @@ function In(props) {
 
     const [website_info_tag, set_website_info_tag] = useState("all");
     return (
-        <div className="in">
+        <div className={in_module_scss.in}>
             <Header title_key={"index"} />
+
+            <div className={in_module_scss.in_body}>
+
+
 
             <TopCarousel />
             <div className={in_module_scss.website_info_container}>
@@ -80,7 +84,7 @@ function In(props) {
 
                                 {website_info_list_value.website_keywords && <div className={in_module_scss.website_keywords}>
                                         {website_info_list_value.website_keywords.map((value)=>{
-                                            return <span>#{value}&nbsp;&nbsp;</span>
+                                            return <span key={value}>#{value}&nbsp;&nbsp;</span>
                                         })}
                                 </div>}
 
@@ -95,7 +99,7 @@ function In(props) {
                     </Link>)
                 })}
             </div>
-
+            </div>
 
 
         </div>

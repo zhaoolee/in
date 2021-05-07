@@ -27,32 +27,34 @@ function Header(props) {
 
     return (
         <div className={headerscss.header}>
-            <div className={headerscss.logo_container}>
-                <Link href={"/"}>
-                    <a>
-                        <Image
-                            src="/in/fangyuan.png"
-                            alt="fangyuan"
-                            width={"auto"}
-                            height={40}
-                        />
-                    </a>
-                </Link>
-            </div>
 
-            <div className={headerscss.link_container}>
-                {posts.map((post) => (
-                    <div className={headerscss.a_container} key={post.href}>
-                        {props.title_key === post.title_key && <Link href={post.href}>
-                            <a className={headerscss.a_title_hover}>{post.title}</a>
-                        </Link>}
+            <div className={headerscss.header_container}>
+                <div className={headerscss.logo_container}>
+                    <Link href={"/"}>
+                        <a>
+                            <Image
+                                src="/in/fangyuan.png"
+                                alt="fangyuan"
+                                width={"auto"}
+                                height={40}
+                            />
+                        </a>
+                    </Link>
+                </div>
 
-                        {props.title_key !== post.title_key && <Link href={post.href}>
-                            <a className={headerscss.a_title}>{post.title}</a>
-                        </Link>}
-                    </div>
-                ))}
-                <div className={headerscss.fangyuan_icon}>
+                <div className={headerscss.link_container}>
+                    {posts.map((post) => (
+                        <div className={headerscss.a_container} key={post.href}>
+                            {props.title_key === post.title_key && <Link href={post.href}>
+                                <a className={headerscss.a_title_hover}>{post.title}</a>
+                            </Link>}
+
+                            {props.title_key !== post.title_key && <Link href={post.href}>
+                                <a className={headerscss.a_title}>{post.title}</a>
+                            </Link>}
+                        </div>
+                    ))}
+                    <div className={headerscss.fangyuan_icon}>
                         <Image
                             src="/in/fangyuan_icon.png"
                             alt="fangyuan"
@@ -60,9 +62,9 @@ function Header(props) {
                             height={40}
                         />
 
+                    </div>
                 </div>
             </div>
-
         </div>
     )
 }
