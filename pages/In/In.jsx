@@ -76,7 +76,7 @@ function In(props) {
                                 </div>
 
                                 {website_info_list_value.website_more.length> 0 && <div className={in_module_scss.website_more_a}>
-                                    <Link href={website_info_list_value.website_href}>
+                                    <Link href={website_info_list_value.website_more}>
                                         <a>使用说明书</a>
                                     </Link>
                                 </div>}

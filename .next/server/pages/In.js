@@ -3271,7 +3271,7 @@ function In(props) {
     }, website_info_list_value.website_description), website_info_list_value.website_more.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_5___default().website_more_a)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(next_link__WEBPACK_IMPORTED_MODULE_3__.default, {
-      href: website_info_list_value.website_href
+      href: website_info_list_value.website_more
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", null, "\u4F7F\u7528\u8BF4\u660E\u4E66"))))));
   })));
 }
