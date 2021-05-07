@@ -427,9 +427,9 @@ In.getInitialProps = async (ctx) => {
                 website_more: "https://www.v2fy.com/p/T036-photo-editor-2020-09-29/"
             },
             {
-                website_name: "在线拟态",
-                website_href: "https://neumorphism.io/",
-                website_description: "在线生成拟态风格的CSS",
+                website_name: "SimilarSites",
+                website_href: "https://www.similarsites.com/",
+                website_description: "查找类似网站",
                 website_icon: "",
                 website_more: ""
             }
