@@ -508,7 +508,31 @@ In.getInitialProps = async (ctx) => {
             website_info_list: [
 
             ]
-        },
+        },{
+            website_info_name: "游戏<br/>相关",
+            website_info_tag: "game_info",
+            website_info_list: [
+                {
+                    website_name: "Crazy Game",
+                    website_href: "https://www.crazygames.com/",
+                    website_description: "一个更高级的4399",
+                    website_icon: "",
+                    website_more: ""
+                }, {
+                    website_name: "网页小霸王合集",
+                    website_href: "https://www.yikm.net/",
+                    website_description: "小霸王其乐无穷",
+                    website_icon: "",
+                    website_more: ""
+                },{
+                    website_name: "在线DOS游戏",
+                    website_href: "https://dos.zczc.cz/",
+                    website_description: "可以在线玩各种DOS游戏，也支持下载",
+                    website_icon: "",
+                    website_more: ""
+                },
+            ]
+        }
     ];
 
 
