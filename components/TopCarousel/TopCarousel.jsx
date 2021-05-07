@@ -13,8 +13,8 @@ function TopCarousel(props) {
             <Image
                 src="/in/linggan_in.png"
                 alt="方圆灵感导航"
-                width={"auto"}
-                height={40}
+                width={1440}
+                height={778}
             />
         </div>
     )
