@@ -11,11 +11,8 @@ function WebsiteInfo(props) {
         props.set_website_info_tag(props.website_info_list_value.website_info_tag)
     }
 
-    return (<div className={in_module_scss.website_info_container} onClick={set_website_info_tag}>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
+    return (<div className={in_module_scss.website_info_atom} onClick={set_website_info_tag}>
+
                         <div className={in_module_scss.td_website_info}>
 
                             {props.select === true && <div className={in_module_scss.website_info_hover}>
@@ -29,17 +26,13 @@ function WebsiteInfo(props) {
                         </div>
 
 
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </div>)
 }
 
 function In(props) {
 
 
-    const [website_info_tag, set_website_info_tag] = useState("font_research_society");
+    const [website_info_tag, set_website_info_tag] = useState("all");
     return (
         <div className="in">
             <Header title_key={"index"} />
@@ -65,8 +58,10 @@ function In(props) {
                     return (<Link key={website_info_list_value.website_name} href={website_info_list_value.website_href}>
                         <a className={in_module_scss.website_info_list_atom_container_a}>
                             <div className={in_module_scss.website_info_list_atom}>
+                                <div>
                                 <div className={in_module_scss.website_info_list_atom_title}>
                                     {website_info_list_value.website_name}
+                                </div>
                                 </div>
                                 <div className={in_module_scss.website_info_list_atom_description}>
                                     {website_info_list_value.website_description}
@@ -87,6 +82,12 @@ function In(props) {
 In.getInitialProps = async (ctx) => {
 
     const all_website_info_list = [
+        {
+            website_info_name: "展示<br/>全部",
+            website_info_tag: "all",
+            website_info_list: [
+            ]
+        },
         {
             website_info_name: "字体<br/>研究社",
             website_info_tag: "font_research_society",
@@ -441,9 +442,18 @@ In.getInitialProps = async (ctx) => {
 
     let website_info_tag_and_list_obj = {};
 
+
+
     all_website_info_list.map((website_info_value) => {
         website_info_tag_and_list_obj[website_info_value["website_info_tag"]] = website_info_value["website_info_list"]
+        // 添加到查看全部all
+        website_info_value["website_info_list"].map((value)=>{
+            website_info_tag_and_list_obj["all"].push(value)
+        })
+
     })
+
+
 
 
 

@@ -10,7 +10,6 @@ body {
 
 .body_div{
 
-    min-width: 1440px;
-
+    width: 1440px;
     margin: auto;
 }
