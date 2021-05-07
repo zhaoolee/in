@@ -11,7 +11,7 @@ function TopCarousel(props) {
     return (
         <div className={topcarouselscss.container}>
             <Image
-                src="/in/linggan_in.jpeg"
+                src="/in/linggan_in.png"
                 alt="方圆灵感导航"
                 width={"auto"}
                 height={40}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Header from '../../components/Header/index.js';
+import TopCarousel from '../../components/TopCarousel/index.js';
 import in_module_scss from './In.module.scss';
 import Link from 'next/link';
 import Image from 'next/image'
@@ -36,6 +37,8 @@ function In(props) {
     return (
         <div className="in">
             <Header title_key={"index"} />
+
+            <TopCarousel />
             <div className={in_module_scss.website_info_container}>
                 {props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
                     return (
