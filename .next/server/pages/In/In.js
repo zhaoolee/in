@@ -3207,11 +3207,6 @@ function WebsiteInfo(props) {
     className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_4___default().website_info_container),
     onClick: set_website_info_tag
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      width: 30,
-      height: 30
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_4___default().td_website_info)
   }, props.select === true && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_4___default().website_info_hover)

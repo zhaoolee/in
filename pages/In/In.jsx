@@ -16,9 +16,6 @@ function WebsiteInfo(props) {
             <tbody>
                 <tr>
                     <td>
-                        <div style={{ width: 30, height: 30 }}></div>
-                    </td>
-                    <td>
                         <div className={in_module_scss.td_website_info}>
 
                             {props.select === true && <div className={in_module_scss.website_info_hover}>
