@@ -8,15 +8,20 @@ class MyDocument extends Document {
     return { ...initialProps }
   }
 
+
+
   render() {
     return (
       <Html>
         <Head />
+
+
         <body>
-            <div className="body_div">
-                <Main />
-                <NextScript />
-            </div>
+          <div className="body_div">
+            <Main />
+            <NextScript />
+          </div>
+
 
         </body>
       </Html>
