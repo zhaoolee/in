@@ -11,7 +11,7 @@ function WebsiteInfo(props) {
         props.set_website_info_tag(props.website_info_list_value.website_info_tag)
     }
 
-    return (<div onClick={set_website_info_tag}>
+    return (<div className={in_module_scss.website_info_container} onClick={set_website_info_tag}>
         <table>
             <tbody>
                 <tr>
@@ -19,6 +19,8 @@ function WebsiteInfo(props) {
                         <div style={{ width: 30, height: 30 }}></div>
                     </td>
                     <td>
+                        <div className={in_module_scss.td_website_info}>
+
                         {props.select === true && <div className={in_module_scss.website_info_hover}>
                             <div className={in_module_scss.website_info_text} dangerouslySetInnerHTML={{ __html: props.website_info_list_value.website_info_name }}></div>
                         </div>}
@@ -26,6 +28,9 @@ function WebsiteInfo(props) {
                         {props.select === false && <div className={in_module_scss.website_info}>
                             <div className={in_module_scss.website_info_text} dangerouslySetInnerHTML={{ __html: props.website_info_list_value.website_info_name }}></div>
                         </div>}
+
+                        </div>
+
 
                     </td>
                 </tr>
@@ -149,7 +154,7 @@ In.getInitialProps = async (ctx) => {
             }, {
                 website_name: "在线拟态",
                 website_href: "https://neumorphism.io/",
-                website_description: "天是方的，地是圆的",
+                website_description: "在线生成拟态风格的CSS",
                 webiste_icon: "",
                 website_more: ""
             }
@@ -165,6 +170,20 @@ In.getInitialProps = async (ctx) => {
                     website_description: "天是方的，地是圆的",
                     webiste_icon: "",
                     website_more: ""
+                },
+                {
+                    website_name: "V2方圆",
+                    website_href: "https://v2fy.com",
+                    website_description: "发掘稀缺资源",
+                    webiste_icon: "",
+                    website_more: ""
+                }, 
+                {
+                    website_name: "方圆小站",
+                    website_href: "https://fangyuanxiaozhan.com",
+                    website_description: "zhaoolee不聊技术的杂谈站",
+                    webiste_icon: "",
+                    website_more: ""
                 }
             ]
         },
@@ -175,13 +194,27 @@ In.getInitialProps = async (ctx) => {
                 {
                     website_name: "Chrome插件英雄榜",
                     website_href: "https://github.com/zhaoolee/ChromeAppHeroes",
-                    website_description: "为优质Chrome插件写一本中文说明书，让Chrome插件造福人类",
+                    website_description: "🌈谷粒-Chrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~",
+                    webiste_icon: "",
+                    website_more: ""
+                },
+                {
+                    website_name: "中国的表情包",
+                    website_href: "https://github.com/zhaoolee/ChineseBQB",
+                    website_description: "🇨🇳 表情包的博物馆, Github最有毒的仓库, 中国表情包大集合, 聚欢乐~",
+                    webiste_icon: "",
+                    website_more: ""
+                },
+                {
+                    website_name: "在线工具秘籍",
+                    website_href: "https://github.com/zhaoolee/OnlineToolsBook",
+                    website_description: "🍭在线工具秘籍,为在线工具写一本优质说明书,让在线工具造福人类~",
                     webiste_icon: "",
                     website_more: ""
                 }, {
-                    website_name: "在线工具秘籍",
+                    website_name: "嘎!RSS",
                     website_href: "https://github.com/zhaoolee/OnlineToolsBook",
-                    website_description: "让在线工具造福人类",
+                    website_description: "Github Actions采集RSS, 打造无广告内容优质的头版头条超赞宝藏页",
                     webiste_icon: "",
                     website_more: ""
                 }
@@ -191,13 +224,7 @@ In.getInitialProps = async (ctx) => {
             website_info_name: "行业<br/>雷达",
             website_info_tag: "industry_radar",
             website_info_list: [
-                {
-                    website_name: "在线拟态",
-                    website_href: "https://neumorphism.io/",
-                    website_description: "天是方的，地是圆的",
-                    webiste_icon: "",
-                    website_more: ""
-                }
+
             ]
         },
         {
