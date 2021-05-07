@@ -58,12 +58,12 @@ function In(props) {
                     return (<Link key={website_info_list_value.website_name} href={website_info_list_value.website_href}>
                         <a className={in_module_scss.website_info_list_atom_container_a}>
                             <div className={in_module_scss.website_info_list_atom}>
-                                <div>
+                                <div className={in_module_scss.website_info_list_atom_icon}>
                                 {website_info_list_value.website_icon.length > 0 && <Image
                                         src={website_info_list_value.website_icon}
-                                        alt={website_info_list_value.website_icon}
-                                        width={"auto"}
-                                        height={40}
+                                        alt={website_info_list_value.website_name}
+                                        width={50}
+                                        height={50}
                                 />}
                                 </div>
                                 <div>
@@ -74,6 +74,12 @@ function In(props) {
                                 <div className={in_module_scss.website_info_list_atom_description}>
                                     {website_info_list_value.website_description}
                                 </div>
+
+                                {website_info_list_value.website_more.length> 0 && <div className={in_module_scss.website_more_a}>
+                                    <Link href={website_info_list_value.website_href}>
+                                        <a>使用说明书</a>
+                                    </Link>
+                                </div>}
                             </div>
                         </a>
                     </Link>)

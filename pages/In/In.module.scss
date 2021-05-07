@@ -1,49 +1,41 @@
-.in{
-
+.in {
 }
 
-.website_info{
+.website_info {
     width: 124px;
     height: 124px;
     border-radius: 46px;
     background: #ffffff;
-    box-shadow:  14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
+    box-shadow: 14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
     color: #000000;
-    
 }
 
-.td_website_info{
+.td_website_info {
     width: 200px;
     height: 200px;
 
-    cursor:pointer;
+    cursor: pointer;
     display: flex;
-    justify-content:  center ;
-    
+    justify-content: center;
 }
 
-.website_info_atom{
+.website_info_atom {
     display: flex;
     justify-content: center;
     width: 100%;
     text-align: center;
     align-items: center;
-
-    
 }
 
-.website_info_hover{
+.website_info_hover {
     width: 124px;
     height: 124px;
     border-radius: 50px;
     background: #eb0013;
-    box-shadow: 8px 8px 20px 0px #f9dbde, 
-    -8px 8px 20px 0px #f9dbde, 
-    8px -8px 20px 0px #f9dbde, 
-    -8px -8px 20px 0px #f9dbde, 
-    -8px -8px 16px 0px #f57e86 inset;
+    box-shadow: 8px 8px 20px 0px #f9dbde, -8px 8px 20px 0px #f9dbde, 8px -8px 20px 0px #f9dbde,
+        -8px -8px 20px 0px #f9dbde, -8px -8px 16px 0px #f57e86 inset;
     color: #ffffff;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .website_info:hover {
@@ -51,78 +43,66 @@
     height: 124px;
     border-radius: 50px;
     background: #eb0013;
-    box-shadow: 8px 8px 20px 0px #f9dbde, 
-    -8px 8px 20px 0px #f9dbde, 
-    8px -8px 20px 0px #f9dbde, 
-    -8px -8px 20px 0px #f9dbde, 
-    -8px -8px 16px 0px #f57e86 inset;
+    box-shadow: 8px 8px 20px 0px #f9dbde, -8px 8px 20px 0px #f9dbde, 8px -8px 20px 0px #f9dbde,
+        -8px -8px 20px 0px #f9dbde, -8px -8px 16px 0px #f57e86 inset;
     color: #ffffff;
-    cursor:pointer;
-    
+    cursor: pointer;
 }
 
-.website_info_text{
+.website_info_text {
     padding: 20px;
     font-size: 24px;
     line-height: 40px;
     font-weight: 800;
 }
 
-
-.website_info_container{
+.website_info_container {
     display: flex;
-    justify-content:  flex-start ;
+    justify-content: flex-start;
     text-align: center;
     overflow: auto;
     height: 300px;
 }
 
-
-.website_info_list_container{
+.website_info_list_container {
     font-size: 300px;
     height: 200px;
-
 }
 
-
-
 .website_info_list_atom_container {
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
-.website_info_list_atom{
+.website_info_list_atom {
     width: 400px;
     height: 400px;
     border-radius: 46px;
     background: #ffffff;
-    box-shadow:  14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
+    box-shadow: 14px 14px 28px #e6e6e6, -14px -14px 28px #ffffff;
     color: #000000;
     margin: 30px;
-    
+    position: relative;
 }
 
-.website_info_list_atom:hover{
+.website_info_list_atom:hover {
     width: 400px;
     height: 400px;
     border-radius: 46px;
     background: #ffffff;
-    box-shadow:  4px 4px 28px #e6e6e6, -14px -14px 28px #ffffff;
+    box-shadow: 4px 4px 28px #e6e6e6, -14px -14px 28px #ffffff;
     color: #000000;
     margin: 30px;
-    
 }
 
-.website_info_list_atom_container_a{
+.website_info_list_atom_container_a {
     text-decoration: none;
 }
 
 .website_info_list_atom_container_a:hover {
     text-decoration: none;
-    .website_info_list_atom_title{
+    .website_info_list_atom_title {
         color: #eb0013;
         font-size: 22px;
         border: 2px solid #eb0013;
@@ -132,11 +112,9 @@
         margin: 30px 30px 0px 30px;
         font-weight: 800;
     }
-
 }
 
-
-.website_info_list_atom_title{
+.website_info_list_atom_title {
     color: #000000;
     font-size: 22px;
     border: 2px solid #000000;
@@ -147,7 +125,7 @@
     font-weight: 800;
 }
 
-.website_info_list_atom_title:hover{
+.website_info_list_atom_title:hover {
     color: #eb0013;
     font-size: 22px;
     border: 2px solid #eb0013;
@@ -156,17 +134,48 @@
     display: inline-block;
     margin: 30px 30px 0px 30px;
     font-weight: 800;
-
 }
 
-.website_info_list_atom_description{
+.website_info_list_atom_description {
     color: #000000;
     font-size: 18px;
     padding: 10px 0;
     display: inline-block;
     margin: 0px 30px;
-
-
-
 }
 
+.website_info_list_atom_icon {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.website_more_a {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    cursor: pointer;
+
+    a {
+        color: #666666;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid #666666;
+        border-radius: 100px;
+    }
+    
+}
+
+.website_more_a:hover{
+    a {
+        color: #eb0013;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid #eb0013;
+        border-radius: 100px;
+    }
+
+}
