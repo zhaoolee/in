@@ -10,12 +10,30 @@ function TopCarousel(props) {
 
     return (
         <div className={topcarouselscss.container}>
-            <Image
-                src="/in/linggan_in.png"
-                alt="方圆灵感导航"
-                width={1440}
-                height={778}
-            />
+
+            <div className={topcarouselscss.container_big_img}>
+
+                <Image
+                    src="/in/linggan_in.png"
+                    alt="方圆灵感导航"
+                    width={1440}
+                    height={778}
+                />
+
+                <div className={topcarouselscss.linggan_txt}>
+
+                    <Image
+                        src="/in/linggan_txt.png"
+                        alt="灵感"
+                        width={683}
+                        height={500}
+                    />
+
+                </div>
+
+
+            </div>
+
         </div>
     )
 }
