@@ -3268,7 +3268,11 @@ function In(props) {
       className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_5___default().website_info_list_atom_title)
     }, website_info_list_value.website_name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_5___default().website_info_list_atom_description)
-    }, website_info_list_value.website_description), website_info_list_value.website_more.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    }, website_info_list_value.website_description), website_info_list_value.website_keywords && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_5___default().website_keywords)
+    }, website_info_list_value.website_keywords.map(value => {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "#", value, "\xA0\xA0");
+    })), website_info_list_value.website_more.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: (_In_module_scss__WEBPACK_IMPORTED_MODULE_5___default().website_more_a)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(next_link__WEBPACK_IMPORTED_MODULE_3__.default, {
       href: website_info_list_value.website_more
@@ -3364,6 +3368,7 @@ In.getInitialProps = async ctx => {
       website_name: "在线PhotoShop",
       website_href: "https://photopea.com",
       website_description: "功能强大的网页版PhotoShop",
+      website_keywords: ["在线神器", "Photoshop"],
       website_icon: "",
       website_more: "https://www.v2fy.com/p/T001-photopea/"
     }, {
@@ -3700,7 +3705,8 @@ module.exports = {
 	"website_info_list_atom_title": "In_website_info_list_atom_title__3qfMM",
 	"website_info_list_atom_description": "In_website_info_list_atom_description__1y8am",
 	"website_info_list_atom_icon": "In_website_info_list_atom_icon__3VY8q",
-	"website_more_a": "In_website_more_a__KcPCt"
+	"website_more_a": "In_website_more_a__KcPCt",
+	"website_keywords": "In_website_keywords__u7rmG"
 };
 
 

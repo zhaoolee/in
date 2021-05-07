@@ -75,7 +75,14 @@ function In(props) {
                                     {website_info_list_value.website_description}
                                 </div>
 
+                                {website_info_list_value.website_keywords && <div className={in_module_scss.website_keywords}>
+                                        {website_info_list_value.website_keywords.map((value)=>{
+                                            return <span>#{value}&nbsp;&nbsp;</span>
+                                        })}
+                                </div>}
+
                                 {website_info_list_value.website_more.length> 0 && <div className={in_module_scss.website_more_a}>
+
                                     <Link href={website_info_list_value.website_more}>
                                         <a>使用说明书</a>
                                     </Link>
@@ -204,6 +211,7 @@ In.getInitialProps = async (ctx) => {
                 website_name: "在线PhotoShop",
                 website_href: "https://photopea.com",
                 website_description: "功能强大的网页版PhotoShop",
+                website_keywords:["在线神器", "Photoshop"],
                 website_icon: "",
                 website_more: "https://www.v2fy.com/p/T001-photopea/"
             }, {
