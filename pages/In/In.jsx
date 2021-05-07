@@ -429,7 +429,7 @@ In.getInitialProps = async (ctx) => {
             {
                 website_name: "SimilarSites",
                 website_href: "https://www.similarsites.com/",
-                website_description: "查找类似网站",
+                website_description: "让你直呼“好人一生平安”的网站！查找类似网站",
                 website_icon: "",
                 website_more: ""
             }
