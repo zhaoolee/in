@@ -1,14 +1,7 @@
 {
-  "/About/About": "pages/About/About.html",
-  "/About": "pages/About.html",
-  "/Contact/Contact": "pages/Contact/Contact.html",
-  "/Contact": "pages/Contact.html",
-  "/In/In": "pages/In/In.js",
-  "/In": "pages/In.js",
-  "/Subscribe/Subscribe": "pages/Subscribe/Subscribe.html",
-  "/Subscribe": "pages/Subscribe.html",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/404": "pages/404.html"
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
+  "/Subscribe": "pages/Subscribe.js"
 }

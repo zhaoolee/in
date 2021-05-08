@@ -9,7 +9,16 @@ function Subscribe({ Component, pageProps }) {
         <Header title_key={"subscribe"}/>
 
         <div className={subscribe_module_scss.content}>
-            订阅页面开发中...
+
+        <Image
+                    src={"/in/devloading.png"}
+                    alt={"灵感熊猫"}
+                    width={776}
+                    height={1540}
+                />
+
+
+
         </div>
     </div>)
 }
