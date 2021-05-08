@@ -14,7 +14,7 @@ function Header(props) {
             title_key: "index"
         },
         {
-            href: "/subscribe",
+            href: "/subscribe.html",
             title: "订 阅",
             title_key: "subscribe"
         },
