@@ -10,12 +10,12 @@ function About({ Component, pageProps }) {
 
         <div className={about_module_scss.content}>
             <div className={about_module_scss.about_title}>
-
+            <div style={{height: 160}}></div>
             <Image
                     src={"/in/about.png"}
                     alt={"方圆"}
-                    width={100}
-                    height={100}
+                    width={436}
+                    height={115}
                 />
 
 
