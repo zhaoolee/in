@@ -6,16 +6,19 @@
 
 .content{
     display: flex;
-    width: 100%;
+    width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .about_title{
     flex: 0 1 auto;
-    font-size: 50px;
+    font-size: 88px;
+    font-weight: 1000;
 
 }
 
 .desc_container{
-    flex: 0 1 auto;
+    width: 500px;
     padding: 10px;
 }
