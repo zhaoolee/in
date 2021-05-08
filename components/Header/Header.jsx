@@ -35,7 +35,7 @@ function Header(props) {
 
             <div className={headerscss.header_container}>
                 <div className={headerscss.logo_container}>
-                    <Link href={"/"}>
+                    <Link href={"/index.html"}>
                         <a>
                             <Image
                                 src="/in/fangyuan.png"
