@@ -2,17 +2,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from '../../components/Header/index.js';
 import about_module_scss from './About.module.scss';
+import Image from 'next/image'
 
 function About({ Component, pageProps }) {
     return (<div className="about">
         <Header title_key={"about"}/>
 
         <div className={about_module_scss.content}>
-            <div className={about_module_scss.about_title}>About</div>
+            <div className={about_module_scss.about_title}>
+
+            <Image
+                    src={"/in/about.png"}
+                    alt={"方圆"}
+                    width={100}
+                    height={100}
+                />
+
+
+            </div>
             <div className={about_module_scss.desc_container}>
 
                 <div className={about_module_scss.desc_container_fangyuan_red}>
-                    
+                <Image
+                    src={"/in/fangyuan_red.png"}
+                    alt={"方圆"}
+                    width={100}
+                    height={100}
+                />
 
                 </div>
 
@@ -38,6 +54,14 @@ function About({ Component, pageProps }) {
 
                 </div>
 
+                <div className={about_module_scss.desc_container_fangyuan_stu_qr}>
+                <Image
+                    src={"/in/fangyuanstuqr.jpg"}
+                    alt={"方圆STU公众号"}
+                    width={100}
+                    height={100}
+                />
+                </div>
 
 
             </div>

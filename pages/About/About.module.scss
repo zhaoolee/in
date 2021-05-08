@@ -14,13 +14,27 @@
 .about_title{
     flex: 0 1 auto;
     font-size: 88px;
-    font-weight: 1000;
+    font-weight: 800;
 
 }
 
 .desc_container{
     width: 500px;
     padding-right: 200px;
-    padding-top: 400px;
+    padding-top: 300px;
 }
 
+
+.desc_container_fangyuan_red{
+
+    position: relative;
+    left: -28px;
+}
+
+
+.desc_container_fangyuan_stu_qr{
+
+    padding-top: 100px;
+    padding-bottom: 200px;
+    
+}
