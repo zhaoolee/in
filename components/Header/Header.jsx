@@ -7,10 +7,16 @@ import Image from 'next/image'
 function Header(props) {
     console.log("props==>>", props);
     let posts = [
+
         {
             href: "/",
+            title: "首 页",
+            title_key: "index"
+        },
+        {
+            href: "/subscribe",
             title: "订 阅",
-            title_key: "feed"
+            title_key: "subscribe"
         },
         {
             href: "/about.html",

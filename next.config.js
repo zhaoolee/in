@@ -1,4 +1,3 @@
-
 const path = require('path')
 
 module.exports = {
@@ -23,7 +22,10 @@ module.exports = {
       '/contact.html': { page: '/Contact' },
       
       '/about': { page: '/About' },
-      '/about.html': { page: '/About' }
+      '/about.html': { page: '/About' },
+
+      '/subscribe': { page: '/Subscribe' },
+      '/subscribe.html': { page: '/Subscribe' }
     }
   },
 }
