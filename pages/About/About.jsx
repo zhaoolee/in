@@ -11,6 +11,11 @@ function About({ Component, pageProps }) {
             <div className={about_module_scss.about_title}>About</div>
             <div className={about_module_scss.desc_container}>
 
+                <div className={about_module_scss.desc_container_fangyuan_red}>
+                    
+
+                </div>
+
                 <div className={about_module_scss.desc}>
                     <p>天方，地圆，共生；</p>
                     <p>方圆有度，开物不止；</p>
