@@ -316,37 +316,37 @@ In.getInitialProps = async (ctx) => {
                 website_name: "截图拼接工具",
                 website_href: "https://join-screenshots.zhanghai.me/",
                 website_description: "在线电影字幕拼接",
-                website_icon: "",
+                website_icon: "/in/screenshots_icon.png",
                 website_more: "https://www.v2fy.com/p/T013-join-screenshots/"
             }, {
                 website_name: "俄罗斯方块",
                 website_href: "https://chvin.github.io/react-tetris/?lan=zh-cn",
                 website_description: "开源俄罗斯方块小游戏",
-                website_icon: "",
+                website_icon: "/in/react_tetris_icon.png",
                 website_more: "https://www.v2fy.com/p/T014-tetris/"
             }, {
                 website_name: "这是什么番?",
                 website_href: "https://trace.moe/",
                 website_description: "根据截图查找番剧来源",
-                website_icon: "",
+                website_icon: "/in/trace_icon.png",
                 website_more: "https://www.v2fy.com/p/T015-trace-moe/"
             }, {
                 website_name: "拷贝兔",
                 website_href: "https://cp.anyknew.com/",
                 website_description: "一款在线传输文件或文字的工具",
-                website_icon: "",
+                website_icon: "/in/anyknew_icon.png",
                 website_more: "https://www.v2fy.com/p/T016-copy-tool/"
             }, {
                 website_name: "MyFreeMP3",
                 website_href: "http://tool.liumingye.cn/music/?page=searchPage",
                 website_description: "在线下载QQ音乐，网易云音乐所有VIP歌曲",
-                website_icon: "",
+                website_icon: "/in/tool_liumingye_icon.png",
                 website_more: "https://www.v2fy.com/p/T017-liumingye_download_music/"
             }, {
                 website_name: "蓝奏云",
                 website_href: "https://lanzou.com/",
                 website_description: "无需登录即可下载的无限速网盘",
-                website_icon: "",
+                website_icon: "lanzou_icon.png",
                 website_more: "https://www.v2fy.com/p/T018-lanzou/"
             }, {
                 website_name: "船长解析",
