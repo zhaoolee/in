@@ -206,7 +206,7 @@ In.getInitialProps = async (ctx) => {
                     website_name: "懒得勤快",
                     website_href: "https://masuit.com/",
                     website_description: "拥有马克丁封禁全家桶，懒得勤快，互联网分享精神，勤于发现，乐于分享",
-                    website_icon: "",
+                    website_icon: "/in/idpk_icon.png",
                     website_more: "https://www.v2fy.com/p/S001_masuit_com/"
                 },{
                     website_name: "I tell you",
