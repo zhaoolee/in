@@ -454,32 +454,32 @@ In.getInitialProps = async (ctx) => {
                 website_name: "个性化装饰头像合成",
                 website_href: "https://www.iloveimg.com/zh-cn/photo-editor",
                 website_description: "无需小程序，无需注册登录，手机网页完成超清头像合成",
-                website_icon: "",
+                website_icon: "/in/compress_image_icon.png",
                 website_more: "https://www.v2fy.com/p/T036-photo-editor-2020-09-29/"
             },{
                 website_name: "小码助手",
                 website_href: "https://xiaomark.com/",
                 website_description: "小码助手是一款短链接生成工具，可以为相同的链接生成不同的N个短链接",
-                website_icon: "",
+                website_icon: "/in/xiaomark_icon.png",
                 website_more: "https://www.v2fy.com/p/T038-xiaomark-2020-10-12/"
             },{
                 website_name: "世界时间",
                 website_href: "https://24timezones.com/",
                 website_description: "小现在世界各地是什么时间？",
-                website_icon: "",
+                website_icon: "/in/24timezones_icon.png",
                 website_more: "https://www.v2fy.com/p/T039-24timezones-2020-11-06/"
             },{
                 website_name: "KinhDownload",
                 website_href: "https://pan.kdbaidu.com/",
                 website_description: "百度网盘免会员高速下载破解",
-                website_icon: "",
+                website_icon: "/in/kinh_icon.png",
                 website_more: "https://www.v2fy.com/p/T040-kdbaidu/"
             },
             {
                 website_name: "SimilarSites",
                 website_href: "https://www.similarsites.com/",
                 website_description: "让你直呼“好人一生平安”的网站！查找类似网站",
-                website_icon: "",
+                website_icon: "/in/similarsites_icon.png",
                 website_more: ""
             }
             ]
@@ -492,21 +492,21 @@ In.getInitialProps = async (ctx) => {
                     website_name: "方圆STU",
                     website_href: "https://fangyuanstu.com",
                     website_description: "天是方的，地是圆的",
-                    website_icon: "",
+                    website_icon: "/in/fangyuanstu_icon.png",
                     website_more: ""
                 },
                 {
                     website_name: "V2方圆",
                     website_href: "https://v2fy.com",
                     website_description: "发掘稀缺资源",
-                    website_icon: "",
+                    website_icon: "/in/v2fy_icon.png",
                     website_more: ""
                 },
                 {
                     website_name: "方圆小站",
                     website_href: "https://fangyuanxiaozhan.com",
                     website_description: "zhaoolee不聊技术的杂谈站",
-                    website_icon: "",
+                    website_icon: "/in/fangyuanxiaozhan_icon.png",
                     website_more: ""
                 }
             ]
@@ -565,19 +565,19 @@ In.getInitialProps = async (ctx) => {
                     website_name: "Crazy Game",
                     website_href: "https://www.crazygames.com/",
                     website_description: "一个更高级的4399",
-                    website_icon: "",
+                    website_icon: "/in/crazygames_icon.png",
                     website_more: ""
                 }, {
                     website_name: "网页小霸王合集",
                     website_href: "https://www.yikm.net/",
                     website_description: "小霸王其乐无穷",
-                    website_icon: "",
+                    website_icon: "/in/yikm_icon.png",
                     website_more: ""
                 }, {
                     website_name: "在线DOS游戏",
                     website_href: "https://dos.zczc.cz/",
                     website_description: "可以在线玩各种DOS游戏，也支持下载",
-                    website_icon: "",
+                    website_icon: "/in/zczc_icon.png",
                     website_more: ""
                 },
             ]
