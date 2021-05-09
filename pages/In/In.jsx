@@ -519,27 +519,27 @@ In.getInitialProps = async (ctx) => {
                     website_name: "Chrome插件英雄榜",
                     website_href: "https://github.com/zhaoolee/ChromeAppHeroes",
                     website_description: "🌈谷粒-Chrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~",
-                    website_icon: "",
+                    website_icon: "/in/chromeappheroes_icon.png",
                     website_more: ""
                 },
                 {
                     website_name: "中国的表情包",
                     website_href: "https://github.com/zhaoolee/ChineseBQB",
                     website_description: "🇨🇳 表情包的博物馆, Github最有毒的仓库, 中国表情包大集合, 聚欢乐~",
-                    website_icon: "",
+                    website_icon: "/in/chinese_bqb_icon.png",
                     website_more: ""
                 },
                 {
                     website_name: "在线工具秘籍",
                     website_href: "https://github.com/zhaoolee/OnlineToolsBook",
                     website_description: "🍭在线工具秘籍,为在线工具写一本优质说明书,让在线工具造福人类~",
-                    website_icon: "",
+                    website_icon: "/in/onlinetoolsbook_icon.png",
                     website_more: ""
                 }, {
                     website_name: "嘎!RSS",
-                    website_href: "https://github.com/zhaoolee/OnlineToolsBook",
+                    website_href: "https://github.com/zhaoolee/garss",
                     website_description: "Github Actions采集RSS, 打造无广告内容优质的头版头条超赞宝藏页",
-                    website_icon: "",
+                    website_icon: "/in/garss_icon.png",
                     website_more: ""
                 }
             ]
