@@ -376,7 +376,7 @@ In.getInitialProps = async (ctx) => {
                 website_name: "Savefrom",
                 website_href: "https://zh.savefrom.net/",
                 website_description: "下载YouTube视频",
-                website_icon: "",
+                website_icon: "/in/zh_savefrom_icon.png",
                 website_more: "https://www.v2fy.com/p/T023-netfrom/"
             }, {
                 website_name: "简洁艺术二维码生成",
@@ -412,19 +412,19 @@ In.getInitialProps = async (ctx) => {
                 website_name: "云网盘之家",
                 website_href: "https://wowenda.com/",
                 website_description: "搜索百度网盘的小姐姐",
-                website_icon: "",
+                website_icon: "/in/wowenda_icon.png",
                 website_more: "https://www.v2fy.com/p/T028-cxk/"
             }, {
                 website_name: "图壳",
                 website_href: "https://imgkr.com/",
                 website_description: "免费超好用的图床，图片最稳定的家",
-                website_icon: "",
+                website_icon: "/in/imgkr_icon.png",
                 website_more: "https://www.v2fy.com/p/T030-imgkr/"
             }, {
                 website_name: "中国传统颜色在线手册",
                 website_href: "https://colors.ichuantong.cn/",
                 website_description: "中国古代如何命名颜色",
-                website_icon: "",
+                website_icon: "/in/ichuantong_icon.png",
                 website_more: "https://www.v2fy.com/p/T031-colors-ichuantong/"
             }, {
                 website_name: "webp2jpg",
