@@ -346,13 +346,13 @@ In.getInitialProps = async (ctx) => {
                 website_name: "蓝奏云",
                 website_href: "https://lanzou.com/",
                 website_description: "无需登录即可下载的无限速网盘",
-                website_icon: "lanzou_icon.png",
+                website_icon: "/in/lanzou_icon.png",
                 website_more: "https://www.v2fy.com/p/T018-lanzou/"
             }, {
                 website_name: "船长解析",
                 website_href: "http://czjx8.com/",
                 website_description: "vip视频在线解析,免费在线查看爱奇艺，腾讯，优酷，芒果，bilibili vip视频",
-                website_icon: "",
+                website_icon: "/in/czjx8_icon.png",
                 website_more: "https://www.v2fy.com/p/T019-vip-movie/"
             }, {
                 website_name: "I Love Img",
