@@ -166,7 +166,7 @@ In.getInitialProps = async (ctx) => {
                     website_name: "100Font",
                     website_href: "https://www.100font.com/",
                     website_description: "一个专门收集“免费商用字体”的网站",
-                    website_icon: "",
+                    website_icon: "/in/100font_icon.png",
                     website_more: ""
                 }
             ]
