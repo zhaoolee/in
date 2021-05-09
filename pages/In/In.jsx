@@ -224,7 +224,7 @@ In.getInitialProps = async (ctx) => {
                     website_name: "抖音短视频无水印解析下载",
                     website_href: "http://tool.liumingye.cn/douyin/",
                     website_description: "通过抖音视频分享链接下载抖音原片~",
-                    website_icon: "",
+                    website_icon: "/in/liumingye_icon.png",
                     website_more: "https://www.v2fy.com/p/S004_tool_liumingye_cn/"
                 },{
                     website_name: "哔哩哔哩壁纸站",
