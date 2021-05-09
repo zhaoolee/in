@@ -212,7 +212,7 @@ In.getInitialProps = async (ctx) => {
                     website_name: "I tell you",
                     website_href: "https://msdn.itellyou.cn/",
                     website_description: "Windows系统各版本纯净镜像",
-                    website_icon: "",
+                    website_icon: "/in/itellyou_icon.png",
                     website_more: "https://www.v2fy.com/p/S002_itellyou_cn/"
                 },{
                     website_name: "Windows系统一句命令激活",
