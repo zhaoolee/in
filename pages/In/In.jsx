@@ -298,25 +298,19 @@ In.getInitialProps = async (ctx) => {
                 website_name: "诺基亚短信图片生成器",
                 website_href: "https://www.noddl.me/",
                 website_description: "有内鬼，终止交易！",
-                website_icon: "",
+                website_icon: "/in/noddl_icon.png",
                 website_more: "https://www.v2fy.com/p/T008-noddl/"
-            }, {
-                website_name: "Urlgot视频下载",
-                website_href: "https://www.urlgot.com/",
-                website_description: "全能视频在线下载工具",
-                website_icon: "",
-                website_more: "https://www.v2fy.com/p/T009-urlgot/"
             }, {
                 website_name: "智能简笔画",
                 website_href: "https://www.autodraw.com/",
                 website_description: "实力画渣, 在线画鱼",
-                website_icon: "",
+                website_icon: "/in/autodraw_icon.png",
                 website_more: "https://www.v2fy.com/p/T010-autodraw/"
             }, {
                 website_name: "Artbreeder",
                 website_href: "https://artbreeder.com/",
                 website_description: "艺术投食者,机器学习合成艺术图片,在线融合人物面部",
-                website_icon: "",
+                website_icon: "/in/artbreeder_icon.png",
                 website_more: "https://www.v2fy.com/p/T011-artbreeder/"
             }, {
                 website_name: "截图拼接工具",
