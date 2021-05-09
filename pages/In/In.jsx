@@ -268,19 +268,19 @@ In.getInitialProps = async (ctx) => {
                 website_name: "求字体",
                 website_href: "https://www.qiuziti.com/",
                 website_description: "快速识别图片中的文字字体",
-                website_icon: "",
+                website_icon: "/in/qiu_icon.png",
                 website_more: "https://www.v2fy.com/p/T003-qiuziti/"
             }, {
                 website_name: "Word Art",
                 website_href: "https://wordart.com/create",
                 website_description: "创建二维码文字云!",
-                website_icon: "",
+                website_icon: "/in/wordart_icon.png",
                 website_more: "https://www.v2fy.com/p/T004-word-art/"
             }, {
                 website_name: "百度脑图",
                 website_href: "https://naotu.baidu.com/",
                 website_description: "好用到不像百度产品的产品",
-                website_icon: "",
+                website_icon: "/in/naotu_baidu.png",
                 website_more: "https://www.v2fy.com/p/T005-baidunaotu/"
             }, {
                 website_name: "微信Markdown编辑器",
