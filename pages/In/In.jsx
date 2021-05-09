@@ -218,7 +218,7 @@ In.getInitialProps = async (ctx) => {
                     website_name: "Windows系统一句命令激活",
                     website_href: "https://v0v.bid/",
                     website_description: "Windows系统激活",
-                    website_icon: "",
+                    website_icon: "/in/vov_bid_icon.png",
                     website_more: "https://www.v2fy.com/p/S003_v0v_bid/"
                 },{
                     website_name: "抖音短视频无水印解析下载",
