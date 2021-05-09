@@ -63,7 +63,7 @@ function In(props) {
                 <div className={in_module_scss.website_info_list_atom_container}>
                     {props.website_info_tag_and_list_obj[website_info_tag].map((website_info_list_value) => {
                         return (<Link key={website_info_list_value.website_name} href={website_info_list_value.website_href}>
-                            <a className={in_module_scss.website_info_list_atom_container_a}>
+                            <a  target="_blank" className={in_module_scss.website_info_list_atom_container_a}>
                                 <div className={in_module_scss.website_info_list_atom}>
                                     <div className={in_module_scss.website_info_list_atom_icon}>
                                         {website_info_list_value.website_icon.length > 0 && <Image
@@ -91,7 +91,7 @@ function In(props) {
                                     {website_info_list_value.website_more.length > 0 && <div className={in_module_scss.website_more_a}>
 
                                         <Link href={website_info_list_value.website_more}>
-                                            <a>使用说明书</a>
+                                            <a  target="_blank">使用说明书</a>
                                         </Link>
                                     </div>}
                                 </div>
@@ -180,7 +180,7 @@ In.getInitialProps = async (ctx) => {
                     website_name: "色彩猎人",
                     website_href: "https://colorhunt.co/",
                     website_description: "提供现成的优质配色示例",
-                    website_icon: "",
+                    website_icon: "/in/colorhunt_icon.png",
                     website_more: ""
                 }
             ]
