@@ -236,7 +236,7 @@ In.getInitialProps = async (ctx) => {
                     website_name: "Pixiv福利插画!year!",
                     website_href: "https://www.pixiv.net/ranking.php?mode=male",
                     website_description: "插画P站最受男性喜欢排行榜资源",
-                    website_icon: "",
+                    website_icon: "/in/pixiv_icon.png",
                     website_more: "https://www.v2fy.com/p/S007_pixiv_net_ranking_php_mode_mal/"
                 }
             ]
@@ -262,7 +262,7 @@ In.getInitialProps = async (ctx) => {
                 website_name: "GIF到MP4转换器",
                 website_href: "https://convertio.co/zh/gif-mp4/",
                 website_description: "可以将100MB以内的gif图片转换为MP4",
-                website_icon: "",
+                website_icon: "/in/convertio_icon.png",
                 website_more: "https://www.v2fy.com/p/T002-gif-to-mp4/"
             }, {
                 website_name: "求字体",
