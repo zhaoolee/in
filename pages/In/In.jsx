@@ -226,7 +226,7 @@ In.getInitialProps = async (ctx) => {
                 website_href: "https://photopea.com",
                 website_description: "功能强大的网页版PhotoShop",
                 website_keywords: ["在线神器", "Photoshop"],
-                website_icon: "",
+                website_icon: "/in/photopea_icon.png",
                 website_more: "https://www.v2fy.com/p/T001-photopea/"
             }, {
                 website_name: "GIF到MP4转换器",
