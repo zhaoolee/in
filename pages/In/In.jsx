@@ -358,19 +358,19 @@ In.getInitialProps = async (ctx) => {
                 website_name: "I Love Img",
                 website_href: "https://www.iloveimg.com/zh-cn/compress-image",
                 website_description: "在线批量无损压缩gif png jpg图片",
-                website_icon: "",
+                website_icon: "/in/compress_image_icon.png",
                 website_more: "https://www.v2fy.com/p/T020-iloveimg/"
             }, {
                 website_name: "Base64在线加密解密",
                 website_href: "https://www.base64encode.org/",
                 website_description: "解密技术论坛中的神秘邮箱",
-                website_icon: "",
+                website_icon: "/in/base64encode_icon.png",
                 website_more: "https://www.v2fy.com/p/T021-b64/"
             }, {
                 website_name: "谷歌免费OCR",
                 website_href: "https://docs.google.com/document/",
                 website_description: "谷歌免费OCR在线中英文识别",
-                website_icon: "",
+                website_icon: "/in/docs_google_icon.png",
                 website_more: "https://www.v2fy.com/p/T022-ocr/"
             }, {
                 website_name: "Savefrom",
@@ -382,31 +382,31 @@ In.getInitialProps = async (ctx) => {
                 website_name: "简洁艺术二维码生成",
                 website_href: "http://qrbtf.com/",
                 website_description: "参数化二维码生成器",
-                website_icon: "",
+                website_icon: "/in/qrbtf_icon.png",
                 website_more: "https://www.v2fy.com/p/T024-qrbtf/"
             }, {
                 website_name: "Bitly",
                 website_href: "https://bitly.com/",
                 website_description: "可能是全球最好用的短链接生成工具",
-                website_icon: "",
+                website_icon: "/in/bitly_icon.png",
                 website_more: "https://www.v2fy.com/p/T025-bitly/"
             }, {
                 website_name: "Bigjpg",
                 website_href: "https://bigjpg.com/",
                 website_description: "AI人工智能图片无损放大",
-                website_icon: "",
+                website_icon: "/in/bigjpg_icon.png",
                 website_more: "https://www.v2fy.com/p/T026-bigjpg/"
             }, {
                 website_name: "彩虹屁生成器",
                 website_href: "https://chp.shadiao.app/",
                 website_description: "快夸夸我!彩虹屁生成器",
-                website_icon: "",
+                website_icon: "/in/chp_icon.png",
                 website_more: "https://www.v2fy.com/p/T027-chp/"
             }, {
                 website_name: "蔡徐坤打篮球",
                 website_href: "https://cxk.ssrr.one/",
                 website_description: "蔡徐坤!出来打球!",
-                website_icon: "",
+                website_icon: "/in/cxk_icon.png",
                 website_more: "https://www.v2fy.com/p/T028-cxk/"
             }, {
                 website_name: "云网盘之家",
