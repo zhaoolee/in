@@ -286,13 +286,13 @@ In.getInitialProps = async (ctx) => {
                 website_name: "微信Markdown编辑器",
                 website_href: "https://doocs.gitee.io/md/#/",
                 website_description: "转化Markdown到微信特制的HTML",
-                website_icon: "",
+                website_icon: "/in/doocs_gitee_icon.png",
                 website_more: "https://www.v2fy.com/p/T006-md2wx/"
             }, {
                 website_name: "Upuptoyou拍立得",
                 website_href: "https://upuptoyou.com/",
                 website_description: "举牌小人在此为您服务",
-                website_icon: "",
+                website_icon: "/in/upuptoyou_icon.png",
                 website_more: "https://www.v2fy.com/p/T007-upuptoyou/"
             }, {
                 website_name: "诺基亚短信图片生成器",
