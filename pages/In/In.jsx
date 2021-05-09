@@ -193,7 +193,7 @@ In.getInitialProps = async (ctx) => {
                     website_name: "在线压缩图片",
                     website_href: "https://www.iloveimg.com/zh-cn/compress-image",
                     website_description: "压缩 JPG, PNG 或 GIF时保持最佳文件质量和压缩程度。一次缩小多个图片文件的尺寸。",
-                    website_icon: "",
+                    website_icon: "/in/compress_image_icon.png",
                     website_more: ""
                 }
             ]
@@ -203,11 +203,41 @@ In.getInitialProps = async (ctx) => {
             website_info_tag: "resource_bazaar",
             website_info_list: [
                 {
-                    website_name: "在线拟态",
-                    website_href: "https://neumorphism.io/",
-                    website_description: "天是方的，地是圆的",
+                    website_name: "懒得勤快",
+                    website_href: "https://masuit.com/",
+                    website_description: "拥有马克丁封禁全家桶，懒得勤快，互联网分享精神，勤于发现，乐于分享",
                     website_icon: "",
-                    website_more: ""
+                    website_more: "https://www.v2fy.com/p/S001_masuit_com/"
+                },{
+                    website_name: "I tell you",
+                    website_href: "https://msdn.itellyou.cn/",
+                    website_description: "Windows系统各版本纯净镜像",
+                    website_icon: "",
+                    website_more: "https://www.v2fy.com/p/S002_itellyou_cn/"
+                },{
+                    website_name: "Windows系统一句命令激活",
+                    website_href: "https://v0v.bid/",
+                    website_description: "Windows系统激活",
+                    website_icon: "",
+                    website_more: "https://www.v2fy.com/p/S003_v0v_bid/"
+                },{
+                    website_name: "抖音短视频无水印解析下载",
+                    website_href: "http://tool.liumingye.cn/douyin/",
+                    website_description: "通过抖音视频分享链接下载抖音原片~",
+                    website_icon: "",
+                    website_more: "https://www.v2fy.com/p/S004_tool_liumingye_cn/"
+                },{
+                    website_name: "哔哩哔哩壁纸站",
+                    website_href: "https://space.bilibili.com/6823116#/album",
+                    website_description: "找哔哩哔哩壁纸娘领壁纸",
+                    website_icon: "",
+                    website_more: "https://www.v2fy.com/p/S005_space_bilibili_album/"
+                },{
+                    website_name: "Pixiv福利插画!year!",
+                    website_href: "https://www.pixiv.net/ranking.php?mode=male",
+                    website_description: "插画P站最受男性喜欢排行榜资源",
+                    website_icon: "",
+                    website_more: "https://www.v2fy.com/p/S007_pixiv_net_ranking_php_mode_mal/"
                 }
             ]
         },
@@ -432,6 +462,24 @@ In.getInitialProps = async (ctx) => {
                 website_description: "无需小程序，无需注册登录，手机网页完成超清头像合成",
                 website_icon: "",
                 website_more: "https://www.v2fy.com/p/T036-photo-editor-2020-09-29/"
+            },{
+                website_name: "小码助手",
+                website_href: "https://xiaomark.com/",
+                website_description: "小码助手是一款短链接生成工具，可以为相同的链接生成不同的N个短链接",
+                website_icon: "",
+                website_more: "https://www.v2fy.com/p/T038-xiaomark-2020-10-12/"
+            },{
+                website_name: "世界时间",
+                website_href: "https://24timezones.com/",
+                website_description: "小现在世界各地是什么时间？",
+                website_icon: "",
+                website_more: "https://www.v2fy.com/p/T039-24timezones-2020-11-06/"
+            },{
+                website_name: "KinhDownload",
+                website_href: "https://pan.kdbaidu.com/",
+                website_description: "百度网盘免会员高速下载破解",
+                website_icon: "",
+                website_more: "https://www.v2fy.com/p/T040-kdbaidu/"
             },
             {
                 website_name: "SimilarSites",
