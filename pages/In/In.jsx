@@ -230,7 +230,7 @@ In.getInitialProps = async (ctx) => {
                     website_name: "哔哩哔哩壁纸站",
                     website_href: "https://space.bilibili.com/6823116#/album",
                     website_description: "找哔哩哔哩壁纸娘领壁纸",
-                    website_icon: "",
+                    website_icon: "/in/bilibili_icon.png",
                     website_more: "https://www.v2fy.com/p/S005_space_bilibili_album/"
                 },{
                     website_name: "Pixiv福利插画!year!",
