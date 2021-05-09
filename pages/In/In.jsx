@@ -430,25 +430,25 @@ In.getInitialProps = async (ctx) => {
                 website_name: "webp2jpg",
                 website_href: "https://renzhezhilu.gitee.io/webp2jpg-online/",
                 website_description: "让图片尺寸薄如蝉翼",
-                website_icon: "",
+                website_icon: "/in/renzhezhilu_icon.png",
                 website_more: "https://www.v2fy.com/p/T032-webp2jog/"
             }, {
                 website_name: "最优图像优化",
                 website_href: "https://zh.recompressor.com/",
                 website_description: "文件尺寸和质量之间选择完美平衡，适合摄影师使用的图片压缩工具",
-                website_icon: "",
+                website_icon: "/in/zh_recompressor_icon.png",
                 website_more: "https://www.v2fy.com/p/T033-recompressor/"
             }, {
                 website_name: "九格切图",
                 website_href: "https://www.ygktool.cn/app/img_split",
                 website_description: "在线制作微信朋友圈九宫格切图",
-                website_icon: "",
+                website_icon: "/in/ygktool_icon.png",
                 website_more: "https://www.v2fy.com/p/T034-9-img-split/"
             }, {
                 website_name: "MdNice",
                 website_href: "http://editor.mdnice.com",
                 website_description: "偷懒完成微信公众号，哔哩哔哩，知乎，掘金发文排版,让Markdown排版更nice！",
-                website_icon: "",
+                website_icon: "/in/mdnice_icon.png",
                 website_more: "https://www.v2fy.com/p/T035-mdnice-2020-09-27/"
             }, {
                 website_name: "个性化装饰头像合成",
