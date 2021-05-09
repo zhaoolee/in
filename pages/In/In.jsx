@@ -545,19 +545,6 @@ In.getInitialProps = async (ctx) => {
             ]
         },
         {
-            website_info_name: "行业<br/>雷达",
-            website_info_tag: "industry_radar",
-            website_info_list: [
-
-            ]
-        },
-        {
-            website_info_name: "数据<br/>查询",
-            website_info_tag: "data_query",
-            website_info_list: [
-
-            ]
-        }, {
             website_info_name: "游戏<br/>相关",
             website_info_tag: "game_info",
             website_info_list: [
@@ -580,6 +567,19 @@ In.getInitialProps = async (ctx) => {
                     website_icon: "/in/zczc_icon.png",
                     website_more: ""
                 },
+            ]
+        },{
+            website_info_name: "行业<br/>雷达",
+            website_info_tag: "industry_radar",
+            website_info_list: [
+
+            ]
+        },
+        {
+            website_info_name: "数据<br/>查询",
+            website_info_tag: "data_query",
+            website_info_list: [
+
             ]
         }
     ];
