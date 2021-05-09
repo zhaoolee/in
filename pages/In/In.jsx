@@ -42,63 +42,63 @@ function In(props) {
 
 
 
-            <TopCarousel />
-            <div className={in_module_scss.website_info_container}>
-                {props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
-                    return (
-                        (website_info_tag === website_info_list_value.website_info_tag) ? <WebsiteInfo
-                            key={website_info_list_value.website_info_name}
-                            set_website_info_tag={set_website_info_tag}
-                            website_info_list_value={website_info_list_value}
-                            select={true}
-                        /> : <WebsiteInfo
-                            key={website_info_list_value.website_info_name}
-                            set_website_info_tag={set_website_info_tag}
-                            website_info_list_value={website_info_list_value}
-                            select={false}
-                        />)
-                })}
-            </div>
+                <TopCarousel />
+                <div className={in_module_scss.website_info_container}>
+                    {props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
+                        return (
+                            (website_info_tag === website_info_list_value.website_info_tag) ? <WebsiteInfo
+                                key={website_info_list_value.website_info_name}
+                                set_website_info_tag={set_website_info_tag}
+                                website_info_list_value={website_info_list_value}
+                                select={true}
+                            /> : <WebsiteInfo
+                                key={website_info_list_value.website_info_name}
+                                set_website_info_tag={set_website_info_tag}
+                                website_info_list_value={website_info_list_value}
+                                select={false}
+                            />)
+                    })}
+                </div>
 
-            <div className={in_module_scss.website_info_list_atom_container}>
-                {props.website_info_tag_and_list_obj[website_info_tag].map((website_info_list_value) => {
-                    return (<Link key={website_info_list_value.website_name} href={website_info_list_value.website_href}>
-                        <a className={in_module_scss.website_info_list_atom_container_a}>
-                            <div className={in_module_scss.website_info_list_atom}>
-                                <div className={in_module_scss.website_info_list_atom_icon}>
-                                {website_info_list_value.website_icon.length > 0 && <Image
-                                        src={website_info_list_value.website_icon}
-                                        alt={website_info_list_value.website_name}
-                                        width={50}
-                                        height={50}
-                                />}
-                                </div>
-                                <div>
-                                    <div className={in_module_scss.website_info_list_atom_title}>
-                                        {website_info_list_value.website_name}
+                <div className={in_module_scss.website_info_list_atom_container}>
+                    {props.website_info_tag_and_list_obj[website_info_tag].map((website_info_list_value) => {
+                        return (<Link key={website_info_list_value.website_name} href={website_info_list_value.website_href}>
+                            <a className={in_module_scss.website_info_list_atom_container_a}>
+                                <div className={in_module_scss.website_info_list_atom}>
+                                    <div className={in_module_scss.website_info_list_atom_icon}>
+                                        {website_info_list_value.website_icon.length > 0 && <Image
+                                            src={website_info_list_value.website_icon}
+                                            alt={website_info_list_value.website_name}
+                                            width={50}
+                                            height={50}
+                                        />}
                                     </div>
-                                </div>
-                                <div className={in_module_scss.website_info_list_atom_description}>
-                                    {website_info_list_value.website_description}
-                                </div>
+                                    <div>
+                                        <div className={in_module_scss.website_info_list_atom_title}>
+                                            {website_info_list_value.website_name}
+                                        </div>
+                                    </div>
+                                    <div className={in_module_scss.website_info_list_atom_description}>
+                                        {website_info_list_value.website_description}
+                                    </div>
 
-                                {website_info_list_value.website_keywords && <div className={in_module_scss.website_keywords}>
-                                        {website_info_list_value.website_keywords.map((value)=>{
+                                    {website_info_list_value.website_keywords && <div className={in_module_scss.website_keywords}>
+                                        {website_info_list_value.website_keywords.map((value) => {
                                             return <span key={value}>#{value}&nbsp;&nbsp;</span>
                                         })}
-                                </div>}
+                                    </div>}
 
-                                {website_info_list_value.website_more.length> 0 && <div className={in_module_scss.website_more_a}>
+                                    {website_info_list_value.website_more.length > 0 && <div className={in_module_scss.website_more_a}>
 
-                                    <Link href={website_info_list_value.website_more}>
-                                        <a>使用说明书</a>
-                                    </Link>
-                                </div>}
-                            </div>
-                        </a>
-                    </Link>)
-                })}
-            </div>
+                                        <Link href={website_info_list_value.website_more}>
+                                            <a>使用说明书</a>
+                                        </Link>
+                                    </div>}
+                                </div>
+                            </a>
+                        </Link>)
+                    })}
+                </div>
             </div>
 
 
@@ -215,10 +215,17 @@ In.getInitialProps = async (ctx) => {
             website_info_name: "在线<br/>神器",
             website_info_tag: "online_tools_book",
             website_info_list: [{
+                website_name: "开源表情包",
+                website_href: "https://www.v2fy.com/asset/0i/ChineseBQB/",
+                website_description: "在线查找Github开源表情包",
+                website_keywords: ["斗图小王子", "表情包"],
+                website_icon: "/in/chinese_bqb_icon.png",
+                website_more: "https://www.v2fy.com/p/000readme-chinesebqb/"
+            },{
                 website_name: "在线PhotoShop",
                 website_href: "https://photopea.com",
                 website_description: "功能强大的网页版PhotoShop",
-                website_keywords:["在线神器", "Photoshop"],
+                website_keywords: ["在线神器", "Photoshop"],
                 website_icon: "",
                 website_more: "https://www.v2fy.com/p/T001-photopea/"
             }, {
@@ -508,7 +515,7 @@ In.getInitialProps = async (ctx) => {
             website_info_list: [
 
             ]
-        },{
+        }, {
             website_info_name: "游戏<br/>相关",
             website_info_tag: "game_info",
             website_info_list: [
@@ -524,7 +531,7 @@ In.getInitialProps = async (ctx) => {
                     website_description: "小霸王其乐无穷",
                     website_icon: "",
                     website_more: ""
-                },{
+                }, {
                     website_name: "在线DOS游戏",
                     website_href: "https://dos.zczc.cz/",
                     website_description: "可以在线玩各种DOS游戏，也支持下载",
