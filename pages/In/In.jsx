@@ -486,6 +486,33 @@ In.getInitialProps = async (ctx) => {
             ]
         },
         {
+            website_info_name: "独立<br/>博客",
+            website_info_tag: "fangyuan_column",
+            website_info_list: [
+                {
+                    website_name: "阮一峰的博客",
+                    website_href: "https://ruanyifeng.com",
+                    website_description: "中国写博客超过10年的知名博主",
+                    website_icon: "/in/B001.png",
+                    website_more: ""
+                },
+                {
+                    website_name: "当我在扯淡",
+                    website_href: "https://yinwang1.wordpress.com",
+                    website_description: "王垠的博客，观点奇妙有趣",
+                    website_icon: "/in/B002.png",
+                    website_more: ""
+                },
+                {
+                    website_name: "黑果小兵的部落阁",
+                    website_href: "https://blog.daliansky.net",
+                    website_description: "Hackintosh安装镜像、教程及经验分享",
+                    website_icon: "/in/B003.png",
+                    website_more: ""
+                }
+            ]
+        },
+        {
             website_info_name: "方圆<br/>栏目",
             website_info_tag: "fangyuan_column",
             website_info_list: [
