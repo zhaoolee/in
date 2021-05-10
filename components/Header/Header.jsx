@@ -31,7 +31,7 @@ function Header(props) {
 
 
     return (
-        <div className={headerscss.header}>
+        <div className={headerscss.header+" animate__animated  animate__fadeInDown"}>
 
             <div className={headerscss.header_container}>
                 <div className={headerscss.logo_container}>

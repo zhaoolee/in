@@ -67,6 +67,7 @@ function In(props) {
                                 <div className={in_module_scss.website_info_list_atom}>
                                     <div className={in_module_scss.website_info_list_atom_icon}>
                                         {website_info_list_value.website_icon.length > 0 && <Image
+
                                             src={website_info_list_value.website_icon}
                                             alt={website_info_list_value.website_name}
                                             width={50}

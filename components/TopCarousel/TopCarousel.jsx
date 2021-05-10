@@ -20,9 +20,10 @@ function TopCarousel(props) {
                     height={778}
                 />
 
-                <div className={topcarouselscss.linggan_txt}>
+                <div className={topcarouselscss.linggan_txt+" animate__animated  animate__zoomIn"}>
 
                     <Image
+
                         src="/in/linggan_txt.png"
                         alt="灵感"
                         width={683}
