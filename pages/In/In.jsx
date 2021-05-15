@@ -482,6 +482,12 @@ In.getInitialProps = async (ctx) => {
                 website_description: "让你直呼“好人一生平安”的网站！查找类似网站",
                 website_icon: "/in/similarsites_icon.png",
                 website_more: ""
+            }, {
+                website_name: "在线练习钢笔工具",
+                website_href: "https://bezier.method.ac/",
+                website_description: "掌握钢笔贝塞尔曲线，是一个老法师的基本技能",
+                website_icon: "/in/bezier_icon.png",
+                website_more: ""
             }
             ]
         },
@@ -625,6 +631,21 @@ In.getInitialProps = async (ctx) => {
         })
 
     })
+
+    console.log(website_info_tag_and_list_obj["all"])
+    
+
+    website_info_tag_and_list_obj["all"].map((value)=>{
+        console.log("## "+value.website_name)
+        console.log("\n")        
+        console.log(value.website_href)
+        console.log("\n")
+        console.log(value.website_description)
+        console.log("\n")
+
+
+    })
+
 
 
 
