@@ -22,6 +22,7 @@
   "homepage": "https://github.com/zhaoolee/in#readme",
   "dependencies": {
     "@babel/polyfill": "7.12.1",
+    "antd": "4.15.6",
     "express": "4.17.1",
     "next": "10.2.0",
     "react": "17.0.2",

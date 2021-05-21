@@ -5,6 +5,8 @@ import TopCarousel from '../../components/TopCarousel/index.js';
 import in_module_scss from './In.module.scss';
 import Link from 'next/link';
 import Image from 'next/image'
+import { Input } from 'antd';
+import 'antd/dist/antd.css';
 
 function WebsiteInfo(props) {
 
@@ -43,6 +45,9 @@ function In(props) {
 
 
                 <TopCarousel />
+
+
+                <Input placeholder="Basic usage" />
                 <div className={in_module_scss.website_info_container}>
                     {props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
                         return (
