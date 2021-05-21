@@ -4,7 +4,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 7844:
+/***/ 4378:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24,8 +24,8 @@ var external_react_dom_ = __webpack_require__(2268);
 ;// CONCATENATED MODULE: external "next/head"
 var head_namespaceObject = require("next/head");;
 var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
-;// CONCATENATED MODULE: external "next/router"
-var router_namespaceObject = require("next/router");;
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__(6731);
 ;// CONCATENATED MODULE: ./pages/_app.js
 
 
@@ -50,7 +50,7 @@ function MyApp({
     };
   };
 
-  router_namespaceObject.Router.events.on('routeChangeComplete', url => {
+  router_.Router.events.on('routeChangeComplete', url => {
     try {
       window._hmt.push(['_trackPageview', url]);
     } catch (e) {}
@@ -67,6 +67,14 @@ function MyApp({
 }
 
 /* harmony default export */ var _app = (MyApp);
+
+/***/ }),
+
+/***/ 6731:
+/***/ (function(module) {
+
+"use strict";
+module.exports = require("next/router");;
 
 /***/ }),
 
@@ -93,7 +101,7 @@ module.exports = require("react-dom");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = (__webpack_exec__(7844));
+var __webpack_exports__ = (__webpack_exec__(4378));
 module.exports = __webpack_exports__;
 
 })();

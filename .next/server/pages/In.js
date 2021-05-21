@@ -3105,7 +3105,10 @@ var In_module_default = /*#__PURE__*/__webpack_require__.n(In_module);
 var external_antd_namespaceObject = require("antd");;
 // EXTERNAL MODULE: ./node_modules/antd/dist/antd.css
 var antd = __webpack_require__(4722);
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__(6731);
 ;// CONCATENATED MODULE: ./pages/In/In.jsx
+
 
 
 
@@ -3144,16 +3147,35 @@ function WebsiteInfo(props) {
 }
 
 function In(props) {
+  // 获取关键词q
+  const router = (0,router_.useRouter)();
+  const {
+    q
+  } = router.query;
   const [website_info_tag, set_website_info_tag] = (0,external_react_.useState)("all");
+  const [input_word, set_input_word] = (0,external_react_.useState)("");
+
+  if (q && q !== input_word) {
+    set_input_word(q);
+  }
+
+  const handle_input_word = e => {
+    set_input_word(e.target.value);
+  };
+
   return /*#__PURE__*/external_react_default().createElement("div", {
     className: (In_module_default()).in
   }, /*#__PURE__*/external_react_default().createElement(Header/* default */.Z, {
     title_key: "index"
   }), /*#__PURE__*/external_react_default().createElement("div", {
     className: (In_module_default()).in_body
-  }, /*#__PURE__*/external_react_default().createElement(components_TopCarousel, null), /*#__PURE__*/external_react_default().createElement(external_antd_namespaceObject.Input, {
-    placeholder: "Basic usage"
-  }), /*#__PURE__*/external_react_default().createElement("div", {
+  }, /*#__PURE__*/external_react_default().createElement(components_TopCarousel, null), /*#__PURE__*/external_react_default().createElement("div", {
+    className: (In_module_default()).input_div
+  }, /*#__PURE__*/external_react_default().createElement(external_antd_namespaceObject.Input, {
+    placeholder: "\u8BF7\u8F93\u5165\u5173\u952E\u8BCD",
+    onChange: handle_input_word,
+    value: input_word
+  }), /*#__PURE__*/external_react_default().createElement(external_antd_namespaceObject.Button, null, "\u5206\u4EAB\u641C\u7D22\u7ED3\u679C")), /*#__PURE__*/external_react_default().createElement("div", {
     className: (In_module_default()).website_info_container
   }, props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
     return website_info_tag === website_info_list_value.website_info_tag ? /*#__PURE__*/external_react_default().createElement(WebsiteInfo, {
@@ -3738,6 +3760,7 @@ module.exports = {
 
 // Exports
 module.exports = {
+	"input_div": "In_input_div__AKIrj",
 	"in_body": "In_in_body__2wm7P",
 	"website_info": "In_website_info__1r1Cw",
 	"td_website_info": "In_td_website_info__1oU6m",
@@ -3972,6 +3995,14 @@ module.exports = require("next/dist/next-server/lib/to-base-64.js");;
 
 "use strict";
 module.exports = require("next/dist/next-server/server/image-config.js");;
+
+/***/ }),
+
+/***/ 6731:
+/***/ (function(module) {
+
+"use strict";
+module.exports = require("next/router");;
 
 /***/ }),
 

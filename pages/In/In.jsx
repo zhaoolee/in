@@ -5,8 +5,9 @@ import TopCarousel from '../../components/TopCarousel/index.js';
 import in_module_scss from './In.module.scss';
 import Link from 'next/link';
 import Image from 'next/image'
-import { Input } from 'antd';
+import { Input, Button } from 'antd';
 import 'antd/dist/antd.css';
+import { useRouter } from 'next/router'
 
 function WebsiteInfo(props) {
 
@@ -33,9 +34,23 @@ function WebsiteInfo(props) {
 }
 
 function In(props) {
-
+    // 获取关键词q
+    const router = useRouter()
+    const { q } = router.query
 
     const [website_info_tag, set_website_info_tag] = useState("all");
+    const [input_word, set_input_word] = useState("");
+
+    if(q && q !==input_word ){
+        set_input_word(q)
+    }
+
+    const handle_input_word = (e)=>{
+        set_input_word(e.target.value);
+    }
+
+
+
     return (
         <div className={in_module_scss.in}>
             <Header title_key={"index"} />
@@ -46,8 +61,17 @@ function In(props) {
 
                 <TopCarousel />
 
+                <div className={in_module_scss.input_div}>
 
-                <Input placeholder="Basic usage" />
+                    <Input placeholder="请输入关键词" onChange={handle_input_word} value={input_word} />
+                    <Button>分享搜索结果</Button>
+
+
+                </div>
+
+
+
+
                 <div className={in_module_scss.website_info_container}>
                     {props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
                         return (
@@ -114,6 +138,8 @@ function In(props) {
 
 
 In.getInitialProps = async (ctx) => {
+
+
 
     const all_website_info_list = [
         {
@@ -665,7 +691,8 @@ In.getInitialProps = async (ctx) => {
     return {
 
         all_website_info_list,
-        website_info_tag_and_list_obj
+        website_info_tag_and_list_obj,
+        
 
 
     }
