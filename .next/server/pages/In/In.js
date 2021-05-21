@@ -3163,6 +3163,8 @@ function In(props) {
     set_input_word(e.target.value);
   };
 
+  const share_q = () => {};
+
   return /*#__PURE__*/external_react_default().createElement("div", {
     className: (In_module_default()).in
   }, /*#__PURE__*/external_react_default().createElement(Header/* default */.Z, {
@@ -3175,7 +3177,9 @@ function In(props) {
     placeholder: "\u8BF7\u8F93\u5165\u5173\u952E\u8BCD",
     onChange: handle_input_word,
     value: input_word
-  }), /*#__PURE__*/external_react_default().createElement(external_antd_namespaceObject.Button, null, "\u5206\u4EAB\u641C\u7D22\u7ED3\u679C")), /*#__PURE__*/external_react_default().createElement("div", {
+  }), /*#__PURE__*/external_react_default().createElement(external_antd_namespaceObject.Button, {
+    onClick: share_q
+  }, "\u5206\u4EAB\u641C\u7D22\u7ED3\u679C")), /*#__PURE__*/external_react_default().createElement("div", {
     className: (In_module_default()).website_info_container
   }, props.all_website_info_list.map((website_info_list_value, website_info_list_index) => {
     return website_info_tag === website_info_list_value.website_info_tag ? /*#__PURE__*/external_react_default().createElement(WebsiteInfo, {

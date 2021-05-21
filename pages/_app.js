@@ -35,6 +35,7 @@ function MyApp({ Component, pageProps }) {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
+      <script src="https://www.v2fy.com/asset/0i/ChineseBQB/cdn/clipboard.min.js"></script>
     </Head>
     <Component {...pageProps} />
   </>)

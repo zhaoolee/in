@@ -49,6 +49,11 @@ function In(props) {
         set_input_word(e.target.value);
     }
 
+    const share_q = ()=> {
+
+        
+    }
+
 
 
     return (
@@ -64,7 +69,7 @@ function In(props) {
                 <div className={in_module_scss.input_div}>
 
                     <Input placeholder="请输入关键词" onChange={handle_input_word} value={input_word} />
-                    <Button>分享搜索结果</Button>
+                    <Button onClick={share_q}>分享搜索结果</Button>
 
 
                 </div>

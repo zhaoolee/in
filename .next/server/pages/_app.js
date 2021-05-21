@@ -63,6 +63,8 @@ function MyApp({
   }), /*#__PURE__*/external_react_default().createElement("link", {
     rel: "stylesheet",
     href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  }), /*#__PURE__*/external_react_default().createElement("script", {
+    src: "https://www.v2fy.com/asset/0i/ChineseBQB/cdn/clipboard.min.js"
   })), /*#__PURE__*/external_react_default().createElement(Component, pageProps));
 }
 
